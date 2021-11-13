@@ -42,8 +42,53 @@
         <main class="footer-allowance">
             <h1>THIS SHOULD MATCH YOUR TITLE IN THE HEAD</h1>
 
-            <section>
-                A NEW SECTION SHOULD EXIST FOR EVERY 'PAGE'
+            <section id="awareness">
+                <model-viewer
+                    id="female-model-viewer"
+                    auto-rotate
+                    field-of-view="20deg"
+                    environment-image="assets/models/moonless_golf_2k.hdr"
+                    alt="A 3D model of a female body's torso"
+                    shadow-intensity="1"
+                    src="assets/models/fem-torso-transLights.glb">
+                </model-viewer>
+                
+                <article id="awareness-content-1">
+                    <p class="article-content">
+                        Breast cancer is when cells in your breast change and grow in an
+                        abnormal way, and sometimes can create tumours. In Ireland alone, roughly 3,600 women and 40 men are diagnosed with it each year. 
+                    </p>
+                    <p class="article-content">
+                        But what about Transgender people? Transgender people undergo lengthy processes to become who they want to be, and although rates of Breast cancer in Transgender people are lower than the general Cisgender population, they are still at risk.
+                    </p>
+                </article>
+                
+                <article id="awareness-content-2">
+                    <p class="article-content">
+                        Research done in the past few years has identified that Transgender
+                        people who undergo hormone treatment have an increased risk of
+                        Breast cancer.
+                    </p>
+                    <p class="article-content">
+                        These studies found that Transgender Women were around 47 times more
+                        likely to develop Breast cancer than Cisgender Men.
+                    </p>
+                    <p class="article-content">
+                        These studies also demonstrated that Transgender Men had a far
+                        reduced risk of Breast cancer than Cisgender Women, although it
+                        is still not completely understood why.
+                    </p>
+                </article>
+
+                <model-viewer
+                    id="male-model-viewer"
+                    auto-rotate
+                    field-of-view="20deg"
+                    environment-image="assets/models/moonless_golf_2k.hdr"
+                    alt="A 3D model of a female body's torso"
+                    shadow-intensity="1"
+                    src="assets/models/male-torso-transLights.glb">
+                </model-viewer>
             </section>
             <p>Hello this is a test</p>
         </main>
@@ -55,6 +100,8 @@
             <p class="copyright">Copyright &copy; Team 10 <span id="copyright"></span></p>
         </footer>
 
+        <!-- External Libraries/Frameworks JS scripts -->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
         <!-- Local scripts -->
         <script src="assets/js/script.js" async></script>
     </body>
