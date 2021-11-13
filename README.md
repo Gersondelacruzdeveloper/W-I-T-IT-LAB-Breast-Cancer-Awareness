@@ -1,4 +1,6 @@
-# Title
+# Bust IT: Cancer without borders
+## Team Name: Chat til late
+---
 
 ![GitHub contributors](https://img.shields.io/github/contributors/vanessacleary/W-I-T-IT-LAB-Breast-Cancer-Awareness)
 ![GitHub last commit](https://img.shields.io/github/last-commit/vanessacleary/W-I-T-IT-LAB-Breast-Cancer-Awareness)
@@ -10,8 +12,12 @@
 [Here is a link to the final project](https://vanessacleary.github.io/W-I-T-IT-LAB-Breast-Cancer-Awareness)
 
 BASIC DESCRIPTION OF PROJECT
+
 It is designed to be responsive on a wide range of devices, whilst also being easy to navigate through.
+
 WHY DID WE CHOOSE THIS PROJECT
+
+Transgender people are often overlooked and under-represented as a group, especially when it comes to information and resources available relating to breast cancer.
 
 ![Final project image home page](assets/docs/finalpage.png)
 
@@ -94,9 +100,13 @@ WHAT WE WANTED FROM THIS PROJECT
 
 * WHAT COLORS USED AND WHY
 
+We chose to use the colours that are in the transgender flag as our site is primarily designed for the transgender community.
+
 ### Typography
 
 * WHAT FONT AND WHY
+
+We have used the google fonts Nunito and Raleway. These fonts are assessible friendly. 
 
 ### Imagery
 
@@ -109,6 +119,8 @@ WHAT WE WANTED FROM THIS PROJECT
 ### Features
 
 * WHAT FEATURES ARE ONE THE SITE, LIKE SCOREBOARD, FUNCTIONS, SCROLLING ALERT BAR, ETC.
+
+Our site has an email sign-up that the user can sign up to and receive a monthly reminder to check their breasts/chest.
 
 [Back to Top](#title)
 
@@ -380,8 +392,12 @@ We tested our website using DevTools Lighthouse feature, and got these results:
 
 * WHO OWNS ANY MEDIA ON THE SITE, SUCH AS IMAGES AND VIDEOS
 
+[footer-light.jpg](https://www.rawpixel.com/image/513903/pink-water-textured-background)
+
+[Privacy Policy Template](https://www.termsfeed.com/public/uploads/2019/04/privacy-policy-template.pdf)
 ### Acknowledgements
 
-* Our facilitator
+* Our facilitator Dragos Scantei.
+* Our families for their endless patience while we hack away.
 
 [Back to Top](#title)
