@@ -55,6 +55,36 @@ a:focus {
     text-decoration-style: double;
 }
 
+/* -------------------------------------------------------------------- Contact Us Page */
+/* code from https://www.w3schools.com/ */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+   button[type=submit] {
+    background-color: #e6007e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type=submit]:hover {
+    background-color: #e6007e;
+  }
+  
+  
+
+
 /* -------------------------------------------------------------------- Accessibility */
 
 .tap-target {

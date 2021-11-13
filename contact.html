@@ -66,20 +66,38 @@
         <!--main section-->
 
         <main class="footer-allowance readable-width">
-            <h1>THIS SHOULD MATCH YOUR TITLE IN THE HEAD</h1>
-
-            <section>
-                A NEW SECTION SHOULD EXIST FOR EVERY 'PAGE'
-            </section>
-            <p>Hello this is a test</p>
+            <div class="page-title">
+                <h1>Contact Us</h1>
+            </div>
+          
+            <div class="container contactus">
+                <form id="contact-form" action="#">
+                                         
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name.." aria-describedby="First Name">
+                  
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." aria-describedby="Last Name">
+                  
+                    <label for="country">Email </label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last email.." aria-describedby="email">
+                  
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                  
+                    <button type="submit" value="Submit">Submit</button>
+                  
+                </form>
+            </div>
+           
+            
         </main>
 
         <footer>
-            <a href="privacy.html">Privacy Policy</a>
+            <a href="#">Privacy Policy</a>
             <a href="accessibility.html">Accessibility</a>
             <!-- Auto-updating copyright -->
             <p class="copyright">Copyright &copy; Team 10 <span id="copyright"></span></p>
-            <!-- Dark mode toggle switch -->
         </footer>
 
         <!-- Local scripts -->
