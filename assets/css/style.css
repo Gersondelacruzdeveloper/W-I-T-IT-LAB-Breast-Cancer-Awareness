@@ -121,7 +121,7 @@ input[type=text], select, textarea {
     width: 70px;
     margin: 0px;
     padding: 19px;
-    animation: logo-spiner 10s 0s ease;
+    animation: logo-spiner infinite 20s linear;
 }
 
 @keyframes logo-spiner {
