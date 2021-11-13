@@ -37,41 +37,41 @@
 
     <body>
         <!--Header section-->
-        <header id="header">
-            <div class="menu_bar" onclick="openNavBar()"><i id="bar_icon" class="fas fa-bars"></i></div>
-
+        <header>
             <div class="logo-spin">
-                <img src="assets/images/Logo-Cools.png"></img>
+                <img src="assets/images/logo-cools.png" alt="Logo icon of all genders, rotating"></img>
             </div>
+
             <div class="logo">
-                <h2>Team_Name</h2>
+                <h2>Bust IT: Cancer Without Borders</h2>
+            </div>
+
+            <div class="menu-bar tap-target" onclick="openNavBar()" role="button">
+                <span class="sr-only">Open the navigation menu</span>
+                <i class="fas fa-bars fa-2x tap-target bar-icon"></i>
             </div>
 
             <nav class="menu" id="menu">
-                <div class="menu_bar" onclick="closeNavBar()"><i class="fas fa-times"></i></div>
+                <div class="menu-bar" onclick="closeNavBar()" role="button">
+                    <i class="fas fa-times fa-2x tap-target close-icon"></i>
+                </div>
                 <ul class="overlay-content">
-                    <li><a href="#">Home</a></li>
-                    <hr>
-                    <li><a href="#">Awareness</a></li>
-                    <hr>
-                    <li><a href="#">Support</a></li>
-                    <hr>
-                    <li><a href="#">Resources</a></li>
-                    <hr>
-                    <li><a href="#">Contact</a></li>
-                    <hr>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#awareness">Awareness</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <!--main section-->
-
-        <main class="footer-allowance readable-width">
-            <h1>THIS SHOULD MATCH YOUR TITLE IN THE HEAD</h1>
+        
+        <!-- Main section -->
+        <main id="home" class="footer-allowance">
+            <h1>Bust IT - Cancer Without Borders</h1>
 
             <section>
                 A NEW SECTION SHOULD EXIST FOR EVERY 'PAGE'
             </section>
-            <p>Hello this is a test</p>
         </main>
 
         <footer>
