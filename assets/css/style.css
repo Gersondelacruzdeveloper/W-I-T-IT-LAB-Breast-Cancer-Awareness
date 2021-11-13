@@ -44,7 +44,7 @@ a {
 #awareness {
     display: grid;
     grid-template-columns: 1;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: minmax(3rem, auto) repeat(4, 1fr);
     justify-content: center;
     align-items: center;
 }
@@ -56,19 +56,26 @@ model-viewer {
     background-color: transparent;
 }
 
-#female-model-viewer {
+#awareness-title {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
 }
 
-#awareness-content-1 {
+#female-model-viewer {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
 }
 
-#awareness-content-2 {
+#awareness-content-1 {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
+}
+
+#awareness-content-2 {
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
 }
 
 #male-model-viewer {
@@ -77,8 +84,8 @@ model-viewer {
 }
 
 #awareness > article {
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 .article-content {
@@ -129,32 +136,39 @@ footer {
 @media (min-width: 992px) {
     #awareness {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: minmax(3rem, auto) repeat(2, 1fr);
     }
 
     model-viewer {
-        height: 70vh;
+        height: 60vh;
         margin: 1rem 0;
+    }
+
+    #awareness-title {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        align-self: center;
+        justify-self: center;
     }
 
     #female-model-viewer {
         grid-column: 1 / 2;
-        grid-row: 1 / 2;
+        grid-row: 2 / 3;
     }
     
     #awareness-content-1 {
         grid-column: 2 / 3;
-        grid-row: 1 / 2;
+        grid-row: 2 / 3;
     }
     
     #awareness-content-2 {
         grid-column: 1 / 2;
-        grid-row: 2 / -1;
+        grid-row: 3 / -1;
     }
     
     #male-model-viewer {
         grid-column: 2 / 3;
-        grid-row: 2 / -1;
+        grid-row: 3 / -1;
     }
 
     #awareness > article {
