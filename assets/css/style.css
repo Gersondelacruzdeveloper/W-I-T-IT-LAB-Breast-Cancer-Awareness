@@ -30,6 +30,43 @@ a {
     color: #000;
 }
 
+/* -------------------------------------------------------------------- Contact Us Page */
+/* code from https://www.w3schools.com/ */
+
+#contact-form {
+    margin: 0 150px;
+    border-radius: 5px;
+    background-color: #EBEBEB;
+    padding: 25px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+   button[type=submit] {
+    background-color: #D16B45;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type=submit]:hover {
+    background-color: #D16B45;
+  }
+  
+  
+
+
 /* -------------------------------------------------------------------- Accessibility */
 
 .tap-target {
@@ -67,3 +104,4 @@ footer {
     justify-items: center;
     align-items: center;
 }
+
