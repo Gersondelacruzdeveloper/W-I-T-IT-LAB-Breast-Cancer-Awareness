@@ -65,70 +65,41 @@
         </header>
         <!--main section-->
 
-        <main class="footer-allowance">
-            <h1>THIS SHOULD MATCH YOUR TITLE IN THE HEAD</h1>
-
-            <section id="awareness">
-                <h2 id="awareness-title">Awareness</h2>
-
-                <model-viewer
-                    id="female-model-viewer"
-                    auto-rotate
-                    field-of-view="30deg"
-                    environment-image="assets/models/moonless_golf_2k.hdr"
-                    alt="A 3D model of a female body's torso"
-                    src="assets/models/fem-torso-transLights.glb">
-                </model-viewer>
-                
-                <article id="awareness-content-1">
-                    <p class="article-content">
-                        Breast cancer is when cells in your breast change and grow in an
-                        abnormal way, and sometimes can create tumours. In Ireland alone, roughly 3,600 women and 40 men are diagnosed with it each year. 
-                    </p>
-                    <p class="article-content">
-                        But what about Transgender people? Transgender people undergo lengthy processes to become who they want to be, and although rates of Breast cancer in Transgender people are lower than the general Cisgender population, they are still at risk.
-                    </p>
-                </article>
-                
-                <article id="awareness-content-2">
-                    <p class="article-content">
-                        Research done in the past few years has identified that Transgender
-                        people who undergo hormone treatment have an increased risk of
-                        Breast cancer.
-                    </p>
-                    <p class="article-content">
-                        These studies found that Transgender Women were around 47 times more
-                        likely to develop Breast cancer than Cisgender Men.
-                    </p>
-                    <p class="article-content">
-                        These studies also demonstrated that Transgender Men had a far
-                        reduced risk of Breast cancer than Cisgender Women, although it
-                        is still not completely understood why.
-                    </p>
-                </article>
-
-                <model-viewer
-                    id="male-model-viewer"
-                    auto-rotate
-                    field-of-view="30deg"
-                    environment-image="assets/models/moonless_golf_2k.hdr"
-                    alt="A 3D model of a female body's torso"
-                    src="assets/models/male-torso-transLights.glb">
-                </model-viewer>
-            </section>
-            <p>Hello this is a test</p>
+        <main class="footer-allowance readable-width">
+            <div class="page-title">
+                <h1>Contact Us</h1>
+            </div>
+          
+            <div class="container contactus">
+                <form id="contact-form" action="#">
+                                         
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name.." aria-describedby="First Name">
+                  
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." aria-describedby="Last Name">
+                  
+                    <label for="country">Email </label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last email.." aria-describedby="email">
+                  
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                  
+                    <button type="submit" value="Submit">Submit</button>
+                  
+                </form>
+            </div>
+           
+            
         </main>
 
         <footer>
-            <a href="privacy.html">Privacy Policy</a>
+            <a href="#">Privacy Policy</a>
             <a href="accessibility.html">Accessibility</a>
             <!-- Auto-updating copyright -->
             <p class="copyright">Copyright &copy; Team 10 <span id="copyright"></span></p>
-            <!-- Dark mode toggle switch -->
         </footer>
 
-        <!-- External Libraries/Frameworks JS scripts -->
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
         <!-- Local scripts -->
         <script src="assets/js/script.js" async></script>
     </body>
