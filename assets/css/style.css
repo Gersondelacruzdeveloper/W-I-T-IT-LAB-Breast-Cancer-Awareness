@@ -237,8 +237,6 @@ footer {
         background: url(../images/footer-dark.jpg);
     }
 }
-<<<<<<< HEAD
-=======
 
 
 /* -------------------------------------------------------------------- Media query */
@@ -312,4 +310,3 @@ footer {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
->>>>>>> 42a63b86d1c68892187b1005c281babef85153ed
