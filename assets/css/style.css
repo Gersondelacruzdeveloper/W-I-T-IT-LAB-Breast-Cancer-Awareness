@@ -3,8 +3,6 @@
 /* -------------------------------------------------------------------- Variables */
 
 :root {
-    --sample-color: #fff000;
-    --sample-color-2: #f0000f;
     --blue: #4acdf9;
     --pink: #e6007e;
     --black: #000000;
@@ -51,6 +49,10 @@ a {
     margin: auto;
 }
 
+.section-margin {
+    margin: 1.5rem 0;
+}
+
 /* -------------------------------------------------------------------- Hover / Focus */
 
 a:hover,
@@ -68,6 +70,20 @@ a:focus {
     grid-template-rows: minmax(3rem, auto) repeat(4, 1fr);
     justify-content: center;
     align-items: center;
+}
+
+#awareness-title {
+    font-size: 2.2rem;
+    font-style: italic;
+}
+
+#awareness-title::after {
+    display: block;
+    content: '';
+    margin: 0.5rem auto;
+    height: 2px;
+    width: 80%;
+    background-color: var(--light-pink);
 }
 
 model-viewer {
