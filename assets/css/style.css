@@ -9,6 +9,10 @@
     --pink: #e6007e;
     --black: #000000;
     --white: #ffffff;
+    --p-color-dk: #1a1a25;
+    --p-color-lt: #d8d8d8;
+    --light-blue: #5DD0FA;
+    --light-pink: #F7A8B9;
 }
 
 /* -------------------------------------------------------------------- Resets */
@@ -19,8 +23,8 @@ html {
 }
 
 body {
-    background-color: #fff;
-    color: #000;
+    background-color: var(--p-color-lt);
+    color: var(--p-color-dk);
     font-family: 'Nunito', sans-serif;
     height: calc(100vh - 48px);
 }
@@ -32,7 +36,23 @@ a {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: var(--p-color-dk);
+}
+
+/* -------------------------------------------------------------------- Utilities */
+
+.readable-width {
+    max-width: 720px;
+    margin: auto;
+}
+
+/* -------------------------------------------------------------------- Hover / Focus */
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    text-decoration-color: var(--light-pink);
+    text-decoration-style: double;
 }
 
 /* -------------------------------------------------------------------- Accessibility */
@@ -149,12 +169,45 @@ footer {
     left: 0;
     width: 100%;
     height: 48px;
-    background: var(--sample-color);
+    background: url(../images/footer-light.jpg);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
 }
+
+/* -------------------------------------------------------------------- Accessibility / Privacy Page */
+
+.footer-page {
+    background: var(--light-blue);
+    background: linear-gradient(90deg, rgba(93, 208, 250, 1) 0%, rgba(247, 168, 185, 1) 100%);
+}
+
+/* -------------------------------------------------------------------- Media queries */
+
+@media (prefers-reduced-motion) {
+    /* Non-motion styles here */
+}
+
+/* Dark mode color styles here */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --p-color-lt: #1a1a25;
+        --p-color-dk: #d8d8d8;
+        --light-blue: #031B68;
+        --light-pink: #b82b4a;
+    }
+
+    .footer-page {
+        background: var(--light-blue);
+        background: linear-gradient(90deg, rgba(3, 27, 104, 1) 0%, rgba(184, 43, 74, 1) 100%);
+    }
+
+    footer {
+        background: url(../images/footer-dark.jpg);
+    }
+}
+
 
 /* -------------------------------------------------------------------- Media query */
 
