@@ -61,7 +61,7 @@ footer {
     left: 0;
     width: 100%;
     height: 48px;
-    background: var(--sample-color);
+    background: url(/assets/images/image-from-rawpixel-id-2701600-jpeg.jpg);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
