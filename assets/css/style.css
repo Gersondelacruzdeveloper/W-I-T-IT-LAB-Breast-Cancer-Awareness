@@ -40,6 +40,15 @@ a {
     margin: auto;
 }
 
+/* -------------------------------------------------------------------- Hover / Focus */
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    text-decoration-color: var(--light-pink);
+    text-decoration-style: double;
+}
+
 /* -------------------------------------------------------------------- Accessibility */
 
 .tap-target {
@@ -71,16 +80,16 @@ footer {
     left: 0;
     width: 100%;
     height: 48px;
-    background: url(/assets/images/image-from-rawpixel-id-2701600-jpeg.jpg);
+    background: url(../images/footer-light.jpg);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
 }
 
-/* -------------------------------------------------------------------- Accessibility Page */
+/* -------------------------------------------------------------------- Accessibility / Privacy Page */
 
-.a11y-page {
+.footer-page {
     background: var(--light-blue);
     background: linear-gradient(90deg, rgba(93,208,250,1) 0%, rgba(247,168,185,1) 100%);
 }
@@ -91,8 +100,8 @@ footer {
     /* Non-motion styles here */
 }
 
+/* Dark mode color styles here */
 @media (prefers-color-scheme: dark) {
-    /* Dark mode color styles here */
     :root {
         --p-color-lt: #1a1a25;
         --p-color-dk: #d8d8d8;
@@ -100,8 +109,12 @@ footer {
         --light-pink: #b82b4a;
     }
 
-    .a11y-page {
+    .footer-page {
         background: var(--light-blue);
         background: linear-gradient(90deg, rgba(3,27,104,1) 0%, rgba(184, 43, 74,1) 100%);
+    }
+
+    footer {
+        background: url(../images/footer-dark.jpg);
     }
 }
