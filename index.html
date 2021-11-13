@@ -27,7 +27,8 @@
         <!-- Local stylesheets -->
         <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
         <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -35,9 +36,34 @@
     </head>
 
     <body>
-        <header>
-            <nav></nav>
+<!--Header section-->
+<header id="header">
+    <div class="menu_bar" onclick="openNavBar()"><i id="bar_icon" class="fas fa-bars"></i></div>
+
+    <div class="logo-spin">
+        <img src="assets/images/Logo-Cools.png"></img>
+    </div>
+    <div class="logo">
+        <h2>Team_Name</h2>
+    </div>
+
+    <nav class="menu" id="menu">
+        <div class="menu_bar" onclick="closeNavBar()"><i class="fas fa-times"></i></div>
+        <ul class="overlay-content">
+            <li><a href="#">Home</a></li>
+            <hr>
+            <li><a href="#">Awareness</a></li>
+            <hr>
+            <li><a href="#">Support</a></li>
+            <hr>
+            <li><a href="#">Resources</a></li>
+            <hr>
+            <li><a href="#">Contact</a></li>
+            <hr>
+        </ul>
+    </nav>
         </header>
+ <!--main section-->
 
         <main class="footer-allowance">
             <h1>THIS SHOULD MATCH YOUR TITLE IN THE HEAD</h1>

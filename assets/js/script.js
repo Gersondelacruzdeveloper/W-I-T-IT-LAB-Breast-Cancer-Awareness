@@ -7,3 +7,12 @@ function copyrightYear() {
 }
 
 copyrightYear();
+// -------------------------------------------------------------------- Header 
+
+function openNavBar() {
+    document.getElementById("menu").style.height = "100%";
+}
+
+function closeNavBar() {
+    document.getElementById("menu").style.height = "0%";
+}
