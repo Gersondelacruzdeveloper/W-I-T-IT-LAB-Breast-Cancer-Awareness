@@ -35,14 +35,43 @@
     </head>
 
     <body class="footer-page">
-
+        <!--Header section-->
         <header>
-            <nav></nav>
+            <div class="logo-spin">
+                <img src="assets/images/logo-cools.png" alt="Logo icon of all genders, rotating"></img>
+            </div>
+
+            <div class="logo">
+                <h2>Bust IT: Cancer Without Borders</h2>
+            </div>
+
+            <div class="menu-bar tap-target" onclick="openNavBar()">
+                <span class="sr-only">Open the navigation menu</span>
+                <i class="fas fa-bars fa-2x tap-target bar-icon"></i>
+            </div>
+
+            <nav class="menu" id="menu">
+                <div class="menu-bar" onclick="closeNavBar()">
+                    <i class="fas fa-times tap-target"></i>
+                </div>
+                <ul class="overlay-content">
+                    <li><a href="/index.html">Home</a></li>
+                    <hr>
+                    <li><a href="/index.html#awareness">Awareness</a></li>
+                    <hr>
+                    <li><a href="/index.html#support">Support</a></li>
+                    <hr>
+                    <li><a href="/index.html#resources">Resources</a></li>
+                    <hr>
+                    <li><a href="/index.html#contact">Contact</a></li>
+                    <hr>
+                </ul>
+            </nav>
         </header>
 
         <main class="footer-allowance readable-width">
             <h1>Privacy Policy</h1>
-            <h2>PROJECT_NAME</h2>
+            <h2>Bust IT - Cancer Without Borders</h2>
             <p>Last updated: 13th November 2021.</p>
             <p>Team 10 of the Code Institute x IT Labs Breast Cancer Awareness Hackathon operate this site. This page informs you of our policies regarding the collection, use and disclosure of
             Personal Information we receive from users of the Site.</p>
