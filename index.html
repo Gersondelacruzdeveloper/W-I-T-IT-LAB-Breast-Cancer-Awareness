@@ -34,10 +34,8 @@
         <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
         <!-- email JS -->
-        <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
-        </script>
-        <script type="text/javascript">
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script>
             (function(){
                 emailjs.init("user_YIcIZfQpFVO1lE0J5li0u");            
             })();
@@ -48,7 +46,7 @@
         <!--Header section-->
         <header>
             <div class="logo-spin">
-                <img src="assets/images/logo-cools.png" alt="Logo icon of all genders, rotating"></img>
+                <img src="assets/images/logo-cools.png" alt="Logo icon of all genders, rotating">
             </div>
 
             <div class="logo">
@@ -230,7 +228,7 @@
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder="Your email address..." required>
                       
-                        <label for="subject">Message</label>
+                        <label for="message">Message</label>
                         <textarea id="message" name="message" placeholder="Write something..." required></textarea>
                       
                         <button type="submit" value="Submit">Submit</button>
