@@ -17,6 +17,7 @@
 
 html {
     height: 100%;
+    width: 100%;
 }
 
 * {
@@ -30,6 +31,7 @@ body {
     color: var(--p-color-dk);
     font-family: 'Nunito', sans-serif;
     height: calc(100vh - 48px);
+    margin: 0;
 }
 
 p,
@@ -141,26 +143,26 @@ input[type=text], select, textarea {
     margin-top: 6px; 
     margin-bottom: 16px; 
     resize: vertical 
-  }
-  
-   button[type=submit] {
+}
+
+button[type=submit] {
     background-color: #e6007e;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
+}
   
-  button[type=submit]:hover {
+button[type=submit]:hover {
     background-color: #e6007e;
-  }
+}
 
 /* -------------------------------------------------------------------- Accessibility */
 
 .tap-target {
-    width: 48px;
-    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
 }
 
 .sr-only {
@@ -175,27 +177,9 @@ input[type=text], select, textarea {
     border: 0;
 }
 
-/* ----------------------------------------Header */
+/* -------------------------------------------------------------------- Animations */
 
-.overlay-content li {
-    text-transform: uppercase;
-}
-
-.logo {
-    float: left;
-    margin: 10px;
-}
-
-
-.logo-spin img {
-    float: left;
-    width: 70px;
-    margin: 0px;
-    padding: 19px;
-    animation: logo-spiner 10s 0s ease;
-}
-
-@keyframes logo-spiner {
+@keyframes logo-spinner {
     from {
         transform: rotate(0deg);
     }
@@ -205,6 +189,31 @@ input[type=text], select, textarea {
     }
 }
 
+/* -------------------------------------------------------------------- Header */
+
+header {
+    display: grid;
+    grid-template-areas: "logo-img project-name nav-menu";
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--pink);
+    align-items: center;
+    justify-items: center;
+}
+
+.logo-spin img {
+    grid-area: logo-img;
+    width: 70px;
+    margin: 0px;
+    padding-left: 20px;
+    animation: logo-spinner infinite 20s linear;
+}
+
+.logo {
+    visibility: hidden;
+    grid-area: project-name;
+    margin: 10px;
+}
 
 .logo h2 {
     color: var(--white);
@@ -212,20 +221,29 @@ input[type=text], select, textarea {
     padding: 19px;
 }
 
-.bar_icon {
+.menu-bar,
+nav {
+    grid-area: nav-menu;
+}
+
+.menu-bar {
+    text-align: center;
+    justify-self: right;
+    margin-right: 20px;
+}
+
+.logo-spin {
+    justify-self: left;
+}
+
+.bar-icon {
     display: none;
+    padding-top: 8px;
 }
 
-#menu {
+nav {
     overflow: hidden;
-    margin: 29px 10px 10px 10px;
 }
-
-#header {
-    overflow: hidden;
-    background-color: var(--pink);
-}
-
 
 .menu ul {
     list-style-type: none;
@@ -233,8 +251,13 @@ input[type=text], select, textarea {
     padding: 0;
 }
 
-.menu li {
-    float: right;
+.overlay-content {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.overlay-content li {
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .menu a {
@@ -245,15 +268,13 @@ input[type=text], select, textarea {
     display: block;
 }
 
-.menu a:hover {
+.menu a:hover,
+.menu a:focus {
     background-color: var(--blue);
     cursor: pointer;
 }
 
-.menu_bar {
-    display: none;
-}
-
+.menu-bar,
 .overlay-content hr {
     display: none;
 }
@@ -286,8 +307,11 @@ footer {
 
 /* -------------------------------------------------------------------- Media queries */
 
+/* Non-motion styles here */
 @media (prefers-reduced-motion) {
-    /* Non-motion styles here */
+    .logo-spin img {
+        animation: none;
+    }
 }
 
 /* Dark mode color styles here */
@@ -311,28 +335,17 @@ footer {
 
 /* -------------------------------------------------------------------- Media query */
 
-/* Extra small devices (phones, 900px and down) */
-@media only screen and (max-width:900px) {
-    #menu {
-        margin: 0;
-    }
-
-    #menu li {
-        float: none;
-    }
-
-    .menu_bar {
+@media only screen and (max-width: 768px) {
+    .menu-bar {
         background-color: var(--blue);
         border-radius: 2px 2px 2px 2px;
-        margin: 10px;
         display: block;
-        float: right;
-        font-size: 15px;
-        padding: 19px;
         color: var(--white);
+        width: 48px;
+        height: 48px;
     }
 
-    /* menu slide down from the top*/
+    /* Menu slide down from the top*/
     .menu {
         height: 0%;
         width: 100%;
@@ -340,9 +353,10 @@ footer {
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #2d2d2b;
+        background-color: var(--p-color-lt);
         overflow-y: hidden;
         transition: 0.5s;
+        margin: 0;
     }
 
     .overlay-content {
@@ -357,14 +371,18 @@ footer {
         text-align: center;
     }
 
-    .overlay-content hr {
+    .overlay-content li:after {
+        content: "";
+        background: white;
         display: block;
         width: 50%;
-        color: white;
-        border: 1px solid white;
+        height: 2px;
         margin: auto;
     }
 
+    .close-icon {
+        padding-top: 8px;
+    }
 }
 
     /* Large devices (Desktop tablets, 992px and up) */
@@ -412,11 +430,21 @@ footer {
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 768px) {
+    .overlay-content {
+        display: grid;
+    }
+}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (max-width: 1040px) {
+    .logo {
+        width: 10px;
+        height: 65px;
+    }
+}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1040px) {
+    .logo {
+        visibility: visible;
+    }
+}

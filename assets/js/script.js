@@ -1,5 +1,3 @@
-
-
 /**
  * Detect browser width to update the field of view of both Model-viewer elements
  * */
@@ -13,6 +11,15 @@ if (innerWidth < "992") {
         el.setAttribute('field-of-view', '45deg');
     }
 };
+// -------------------------------------------------------------------- Header 
+
+function openNavBar() {
+    document.getElementById("menu").style.height = "100%";
+}
+
+function closeNavBar() {
+    document.getElementById("menu").style.height = "0%";
+}
 
 // -------------------------------------------------------------------- Copyright
 
@@ -23,12 +30,3 @@ function copyrightYear() {
 }
 
 copyrightYear();
-// -------------------------------------------------------------------- Header 
-
-function openNavBar() {
-    document.getElementById("menu").style.height = "100%";
-}
-
-function closeNavBar() {
-    document.getElementById("menu").style.height = "0%";
-}
