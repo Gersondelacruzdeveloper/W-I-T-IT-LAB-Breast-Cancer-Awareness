@@ -41,14 +41,21 @@ if (innerWidth < "992") {
     }
 };
 
-// -------------------------------------------------------------------- Header 
+// -------------------------------------------------------------------- Navbar 
 
-function openNavBar() {
-    document.getElementById("menu").style.height = "100%";
-}
+let burgerIcon = document.getElementById("nav-burger");
+let closeIcon = document.getElementById("close-icon");
+let navbar = document.getElementById("menu");
 
-function closeNavBar() {
-    document.getElementById("menu").style.height = "0%";
+burgerIcon.addEventListener("click", toggleNavbar);
+closeIcon.addEventListener("click", toggleNavbar);
+
+function toggleNavbar() {
+    if (navbar.classList.contains("navbar-toggle")) {
+        navbar.classList.remove("navbar-toggle");
+    } else {
+        navbar.classList.add("navbar-toggle");
+    }
 }
 
 // -------------------------------------------------------------------- Copyright

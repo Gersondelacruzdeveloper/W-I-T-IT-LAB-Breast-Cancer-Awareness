@@ -124,7 +124,34 @@ Raleway does not sport any extending "serifs" per character making this Font a p
 
 ### Wireframes
 
-[Here are the wireframes for desktop, mobile and tablet for this project](assets/docs/wireframes.pdf).
+<details>
+  <summary>Here are the wireframes for desktop, mobile and tablet for this project</summary>
+
+1. As a first time user, I want to quickly get an overview of what this site is for 
+
+Mobile:
+
+<img style="width:400px; text-align:center" src="./assets/images/mobile-main.png" alt="Wireframe of mobile landing page">
+
+! <img style="width:400px; text-align:center" src="./assets/images/mobile-contact.png " alt="Wireframe of mobile contact page">
+
+Tablet:
+
+2. As a user, I want to be able to easily navigate to different pages on the site and back again
+
+<img style="width:400px; text-align:center" src="./assets/images/tablet.png" alt="Wireframe of tablet navbar page">
+
+<img style="width:400px; text-align:center" src="./assets/images/tablet-contact.png" alt="Wireframe of tablet contact page">
+
+Screen:
+
+<img style="width:400px; text-align:center; border:2px solid red;" src="./assets/images/full-screen-home.png" alt="Wireframe of full-screen landing page">
+
+<img style="width:400px; text-align:center" src="./assets/images/full-screen-contact.png" alt="Wireframe of full-screen contact page">
+
+</details>
+
+
 
 ### Features
 
