@@ -240,8 +240,8 @@ nav {
 
 #about-us {
     display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
     justify-content: center;
     align-items: center;
 }
@@ -277,7 +277,7 @@ img {
 
 #awareness {
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     grid-template-rows: minmax(3rem, auto) auto auto repeat(2, 1fr);
     justify-content: center;
     align-items: center;
@@ -356,7 +356,7 @@ model-viewer {
 
 .contact {
     display: grid;
-    grid-template-columns: 1;    
+    grid-template-columns: 1fr;    
     justify-content: center;
     align-items: center;
 }
