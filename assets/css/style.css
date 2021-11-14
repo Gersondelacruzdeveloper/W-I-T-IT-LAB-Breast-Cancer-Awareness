@@ -407,6 +407,22 @@ footer {
     line-height: normal;
 }
 
+/* -------------------------------------------------------------------- 404 / 500 Page */
+
+.error-background {
+    background: no-repeat url(../images/error-background.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.error-overlay {
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.7);
+}
+
 /* -------------------------------------------------------------------- Media queries */
 
 /* Non-motion styles here */
@@ -428,6 +444,11 @@ footer {
     .footer-page {
         background: var(--light-blue);
         background: linear-gradient(90deg, rgba(3, 27, 104, 1) 0%, rgba(184, 43, 74, 1) 100%);
+    }
+
+    .error-background {
+        background: no-repeat url(../images/error-background.jpg);
+        background-size: cover;
     }
 
     footer {
