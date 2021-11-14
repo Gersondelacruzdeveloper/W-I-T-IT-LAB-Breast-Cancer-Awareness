@@ -25,13 +25,13 @@ html {
 body {
     background-color: var(--p-color-lt);
     color: var(--p-color-dk);
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
     height: calc(100vh - 48px);
 }
 
 p,
 a {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 a {

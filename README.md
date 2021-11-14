@@ -133,7 +133,7 @@ Tablet:
 ![Wireframe of tablet contact page](./assets/images/tablet-contact.png)
 
 
-Screen: 
+Screen:
 
 ![Wireframe of full-screen landing page](./assets/images/full-screen-home.png)
 
