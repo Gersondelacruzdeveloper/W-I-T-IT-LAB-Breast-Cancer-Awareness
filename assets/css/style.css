@@ -47,7 +47,8 @@ a {
     color: var(--p-color-dk);
 }
 
-article > section {
+article > section,
+article .article-content {
     font-size: 1.2rem;
     line-height: 2rem;
 }
@@ -261,6 +262,10 @@ nav {
     margin: 1rem 3rem;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+  }
 /* -------------------------------------------------------------------- Awareness */
 
 #awareness {
@@ -549,7 +554,8 @@ footer {
 
     /* Large devices (Desktop tablets, 992px and up) */
 @media only screen and (min-width: 992px) {
-    article > section {
+    article > section,
+    article .article-content {
         font-size: 1.6rem;
         line-height: 3.2rem;
     }
