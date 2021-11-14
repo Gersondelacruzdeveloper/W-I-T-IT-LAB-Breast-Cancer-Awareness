@@ -48,7 +48,8 @@ a {
 }
 
 article > section,
-.resource-lists li {
+.resource-lists li,
+article .article-content {
     font-size: 1.2rem;
     line-height: 2rem;
 }
@@ -235,6 +236,42 @@ nav {
     height: revert;
 }
 
+/* -------------------------------------------------------------------- About Us */
+
+#about-us {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-us-title {
+    font-size: 2.2rem;
+    font-style: italic;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
+}
+
+#about-us-title::after {
+    display: block;
+    content: '';
+    margin: 0.5rem auto;
+    height: 2px;
+    width: 80%;
+    background-color: var(--light-pink);
+}
+
+.article-content {
+    margin: 1rem 3rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
 /* -------------------------------------------------------------------- Awareness */
 
 #awareness {
@@ -419,6 +456,22 @@ footer {
     line-height: normal;
 }
 
+/* -------------------------------------------------------------------- 404 / 500 Page */
+
+.error-background {
+    background: no-repeat url(../images/error-background.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.error-overlay {
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.7);
+}
+
 /* -------------------------------------------------------------------- Media queries */
 
 /* Non-motion styles here */
@@ -440,6 +493,11 @@ footer {
     .footer-page {
         background: var(--light-blue);
         background: linear-gradient(90deg, rgba(3, 27, 104, 1) 0%, rgba(184, 43, 74, 1) 100%);
+    }
+
+    .error-background {
+        background: no-repeat url(../images/error-background.jpg);
+        background-size: cover;
     }
 
     footer {
@@ -535,7 +593,8 @@ footer {
     /* Large devices (Desktop tablets, 992px and up) */
 @media only screen and (min-width: 992px) {
     article > section,
-    .resource-lists li {
+    .resource-lists li,
+    article .article-content {
         font-size: 1.6rem;
         line-height: 3.2rem;
     }
