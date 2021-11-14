@@ -95,7 +95,42 @@ a:focus {
     text-decoration-style: double;
 }
 
-/* -------------------------------------------------------------------- User-utils */
+/* -------------------------------------------------------------------- Awareness */
+
+#awareness {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: minmax(3rem, auto) auto auto repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+#awareness-title {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
+}
+
+#utils-content {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+
+#utils-controls {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+#awareness-content-1 {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+}
+
+#awareness-content-2 {
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+}
 
 #user-utils {
     display: grid;
@@ -103,13 +138,6 @@ a:focus {
     grid-template-rows: minmax(3rem, auto) 1fr minmax(10rem, auto);
     justify-content: center;
     align-items: center;
-}
-
-#utils-title {
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
-    justify-self: center;
-    align-self: center;
 }
 
 #utils-controls {
@@ -133,48 +161,11 @@ a:focus {
     font-size: 1.2rem;
 }
 
-/* -------------------------------------------------------------------- Awareness */
-
-#awareness {
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: minmax(3rem, auto) repeat(4, 1fr);
-    justify-content: center;
-    align-items: center;
-}
-
 model-viewer {
     height: 50vh;
     width: 100%;
     pointer-events: none;
     background-color: transparent;
-}
-
-#awareness-title {
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
-    justify-self: center;
-    align-self: center;
-}
-
-#female-model-viewer {
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
-}
-
-#awareness-content-1 {
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
-}
-
-#awareness-content-2 {
-    grid-column: 1 / -1;
-    grid-row: 5 / 6;
-}
-
-#male-model-viewer {
-    grid-column: 1 / -1;
-    grid-row: 4 / 5;
 }
 
 /* -------------------------------------------------------------------- Contact Us Page */
