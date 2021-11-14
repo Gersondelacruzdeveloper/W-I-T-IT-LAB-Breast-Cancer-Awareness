@@ -74,6 +74,8 @@ WHAT WE WANTED FROM THIS PROJECT
 
 ### User Stories
 
+- As a generic user, I want to be made aware of Breast Cancer in under-represented Genders
+
 #### Client Goals
 
 * WHAT THE CLIENT WANTS, NOT THE USER
@@ -106,7 +108,15 @@ We chose to use the colours that are in the transgender flag as our site is prim
 
 * WHAT FONT AND WHY
 
-We have used the google fonts Nunito and Raleway. These fonts are assessible friendly. 
+We have used the google fonts Nunito and Raleway. These fonts are assessible friendly.
+
+- Nunito is a well balanced sans-serif typeface, meaning it does not have any extending "serif" strokes at the end of each character. This font
+brings a clean, crisp, balanced feel to the website and render with complete precision in all devices which increases legibility for users. As our
+brand is to enhance awareness and increase the reach of the information, this font denotes a calm, relaxed, informal, and approachable set of feelings.
+Nunito in our project is used as our content font and is utilised on large contextual reading pieces throughout the project.
+
+- Raleway an elegant sans-serif typeface, and sports a display face natural property. A display face font is used for headings/titles/slogans etc and being more eccentric than a restrained sans-serif typeface means it is a perfect font for our headings/titles throughout our project. Like Nunito, and as a sans-serif typeface
+Raleway does not sport any extending "serifs" per character making this Font a perfect companion to Nunito and to our users reading/viewing our website on all devices.
 
 ### Imagery
 
