@@ -452,11 +452,9 @@ footer {
 
 /* -------------------------------------------------------------------- Resource styling */
 
-#resource-section 
-    {
+    .resources-grid {
         display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: minmax(3rem, auto) repeat(4, 1fr);
-        justify-content: center;
-        align-items: center;
-    }
+        grid-template-columns: repeat(3, 1fr);
+    
+     }
+
