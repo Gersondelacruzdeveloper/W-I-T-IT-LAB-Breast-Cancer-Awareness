@@ -8,10 +8,10 @@
     
         emailjs.sendForm(serviceID, templateID, this)
             .then(function() {
-                console.log('SUCCESS!');
+                alert("You're message was sent successfuly");
                 document.getElementById("contact-form").reset();
             }, function(error) {
-                console.log('FAILED...', error);
+                alert("Sorry, we had trouble in sending your message", error);
                 document.getElementById("contact-form").reset();
             });
     });
