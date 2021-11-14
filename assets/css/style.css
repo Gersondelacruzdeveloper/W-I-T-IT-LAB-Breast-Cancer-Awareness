@@ -55,6 +55,14 @@ a {
     margin: 1.5rem 0;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.title {
+    margin-top: 30px;
+}
+
 /* -------------------------------------------------------------------- Hover / Focus */
 
 a:hover,
