@@ -16,17 +16,17 @@ interactiveButton.addEventListener("click", () => {
             el.setAttribute('camera-controls', '');
             el.style.pointerEvents = 'auto';
         }
-    };
+    }
 });
 
 rotateButton.addEventListener("click", () => {
-    for (el of modelViewer) {
+    for (let el of modelViewer) {
         if (el.hasAttribute('auto-rotate')) {
             el.removeAttribute('auto-rotate');
         } else {
             el.setAttribute('auto-rotate', '');
         }
-    };
+    }
 });
 
 // -------------------------------------------------------------------- Awareness
@@ -39,4 +39,4 @@ if (innerWidth < "992") {
     for (let el of modelViewer) {
         el.setAttribute('field-of-view', '45deg');
     }
-};
+}
