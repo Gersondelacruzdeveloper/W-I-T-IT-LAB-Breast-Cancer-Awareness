@@ -74,6 +74,8 @@ WHAT WE WANTED FROM THIS PROJECT
 
 ### User Stories
 
+- As a generic user, I want to be made aware of Breast Cancer in under-represented Genders
+
 #### Client Goals
 
 * WHAT THE CLIENT WANTS, NOT THE USER
@@ -104,9 +106,17 @@ We chose to use the colours that are in the transgender flag as our site is prim
 
 ### Typography
 
-* WHAT FONT AND WHY
+We have used the google fonts <a href="https://fonts.google.com/specimen/Nunito">Nunito</a> and <a href="https://fonts.google.com/specimen/Raleway">Raleway</a>. These fonts are assessible friendly.
 
-We have used the google fonts Nunito and Raleway. These fonts are assessible friendly. 
+Nunito is a well balanced sans-serif typeface, meaning it does not have any extending "serif" strokes at the end of each character. This font
+brings a clean, crisp, balanced feel to the website and render with complete precision in all devices which increases legibility for users. As our
+brand is to enhance awareness and increase the reach of the information, this font denotes a calm, relaxed, informal, and approachable set of feelings.
+Nunito in our project is used as our content font and is utilised on large contextual reading pieces throughout the project.
+
+Raleway an elegant sans-serif typeface, and sports a display face natural property. A display face font is used for headings/titles/slogans etc and being more eccentric than a restrained sans-serif typeface means it is a perfect font for our headings/titles throughout our project. Like Nunito, and as a sans-serif typeface
+Raleway does not sport any extending "serifs" per character making this Font a perfect companion to Nunito and to our users reading/viewing our website on all devices.
+
+“Sans-Serif” is used as the default backup font in cases where these fonts have difficulty loading.
 
 ### Imagery
 
@@ -114,11 +124,64 @@ We have used the google fonts Nunito and Raleway. These fonts are assessible fri
 
 ### Wireframes
 
-[Here are the wireframes for desktop, mobile and tablet for this project](assets/docs/wireframes.pdf).
+<details>
+  <summary>Here are the wireframes for desktop, mobile and tablet for this project</summary>
+
+1. As a first time user, I want to quickly get an overview of what this site is for 
+
+Mobile:
+
+<img style="width:400px; text-align:center" src="./assets/images/mobile-main.png" alt="Wireframe of mobile landing page">
+
+! <img style="width:400px; text-align:center" src="./assets/images/mobile-contact.png " alt="Wireframe of mobile contact page">
+
+Tablet:
+
+2. As a user, I want to be able to easily navigate to different pages on the site and back again
+
+<img style="width:400px; text-align:center" src="./assets/images/tablet.png" alt="Wireframe of tablet navbar page">
+
+<img style="width:400px; text-align:center" src="./assets/images/tablet-contact.png" alt="Wireframe of tablet contact page">
+
+Screen:
+
+<img style="width:400px; text-align:center; border:2px solid red;" src="./assets/images/full-screen-home.png" alt="Wireframe of full-screen landing page">
+
+<img style="width:400px; text-align:center" src="./assets/images/full-screen-contact.png" alt="Wireframe of full-screen contact page">
+
+</details>
+
+
 
 ### Features
 
 * WHAT FEATURES ARE ONE THE SITE, LIKE SCOREBOARD, FUNCTIONS, SCROLLING ALERT BAR, ETC.
+
+The site itself utilises a primary Single-Page-Application style build with secondary/tertiary stand-alone pages added, removing unnecessary bloat from the SPA itself. The SPA is constructed and developed on the `index.html` page, which is situated in the root directory, and encompasses the project's primary information and user group engagement sections.
+
+Within the SPA, the structure is comprised of:
+* Navbar to allow for easy navigation within the SPA using Smooth scrolling
+* Hero section maintaining a primary landing image & potential brand slogan
+* Awareness section which holds key informative detail for the user in bite-size fashion
+* Support section which allocates helpful topics for the user
+* Resources section.....
+* Contact section allowing the user to get in touch with brand ambassadors
+* Footer which contains social links/secondary pages such as Privacy/Accessibility statements
+
+Tertiary pages include:
+* 404 Error Page in case of incorrect/adverse navigation to pages/directories that may not exist within this project.
+
+#### Awareness Section
+
+The Awareness section utilises html/css/js to promote information about Breast Cancer to an under-promoted User Group, Transgender People. Information in this section was referenced from multiple sources and is cited below in the Credits of this README.
+
+HTML/CSS is used to structure the content and appropriate section layout using up-to-date methods such as Semantic use of HTML and CSS Grid. 3D Model viewers are implemented to promote the human body and in it's native primitive form. The library used to implement these 3D models is <a href="https://modelviewer.dev/">Model Viewer by Google</a>. On page load, the `model-viewer` elements load both models simultaneously to reduce render on view motion on the site, and User interaction controls are removed by default to enhance user experience and accessibility.
+
+Some JS is utilised to detect the current device viewport width, and if less than 992px wide, the `field-of-view` attribute value of the `model-viewer` elements is updated to reflect the smaller viewport allowing for more of the 3D models to be viewed by the user, saving on vital real estate on the device.
+
+The 3D models utilised in the `model-viewer` and situated in the assets directory in their own sub-directory called "models", were obtained from <a href="https://free3d.com/">free3d.com</a>, and heavily modified in Blender to add custom lighting styled on the Transgender Community's Flag, and to add increased sub-division modifier and shadow rendering. Links to both models in Credits section in this README.
+
+#### Contact section
 
 Our site has an email sign-up that the user can sign up to and receive a monthly reminder to check their breasts/chest.
 
@@ -135,6 +198,12 @@ Our site has an email sign-up that the user can sign up to and receive a monthly
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ### Frameworks Libraries and Programs Used
+
+#### Model Viewer
+[Model Viewer](https://modelviewer.dev/) by Google, used to allow us to use a lightweight, easy to display 3D models preview in the browser. Linked to `index.html` through script link.
+
+#### Blender
+[Blender](https://www.blender.org/) was used to ammend and add to the 3D models obtained for use in the "Awareness" section of the site.
 
 #### Font Awesome
 
@@ -388,13 +457,24 @@ We tested our website using DevTools Lighthouse feature, and got these results:
 
 * WHO OWNS THE CONTENT OF THE SITE
 
+#### Awareness section content cited from:
+* https://breastcancernow.org/about-us/news-personal-stories/transgender-people-breast-cancer
+* https://www.breastcancer.org/research-news/feminizing-hormones-increase-risk-in-trans-women
+* https://helloclue.com/articles/cycle-a-z/what-trans-men-and-nonbinary-people-need-to-know-about-breast-cancer
+* https://www.cancer.ie/cancer-information-and-support/cancer-types/breast-cancer
+
 ### Media
 
 * WHO OWNS ANY MEDIA ON THE SITE, SUCH AS IMAGES AND VIDEOS
 
-[footer-light.jpg](https://www.rawpixel.com/image/513903/pink-water-textured-background)
+* [footer-light.jpg](https://www.rawpixel.com/image/513903/pink-water-textured-background)
 
-[Privacy Policy Template](https://www.termsfeed.com/public/uploads/2019/04/privacy-policy-template.pdf)
+* [Privacy Policy Template](https://www.termsfeed.com/public/uploads/2019/04/privacy-policy-template.pdf)
+
+* [3D Male Torso Model used in model-viewer element Awareness Section](https://free3d.com/3d-model/maletorso-v1--121321.html)
+
+* [3D Female Torso Model used in model-viewer element Awareness Section](https://free3d.com/3d-model/femaletorso-v2--116018.html)
+
 ### Acknowledgements
 
 * Our facilitator Dragos Scantei.
