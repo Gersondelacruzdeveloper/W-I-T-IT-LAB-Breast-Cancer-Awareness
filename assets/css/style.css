@@ -151,7 +151,7 @@ model-viewer {
     grid-row: 4 / 5;
 }
 
-#awareness > article {
+section > article {
     font-size: 1.2rem;
     line-height: 2rem;
 }
@@ -412,7 +412,8 @@ footer {
 
     /* Large devices (Desktop tablets, 992px and up) */
 @media only screen and (min-width: 992px) {
-    article {
+
+    section > article {
         font-size: 1.6rem;
         line-height: 3.2rem;
     }
@@ -452,11 +453,6 @@ footer {
     #male-model-viewer {
         grid-column: 2 / 3;
         grid-row: 3 / -1;
-    }
-
-    #awareness > article {
-        font-size: 1.6rem;
-        line-height: 3.2rem;
     }
 }
 
