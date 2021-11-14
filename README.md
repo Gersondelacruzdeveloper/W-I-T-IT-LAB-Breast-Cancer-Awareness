@@ -124,31 +124,33 @@ Raleway does not sport any extending "serifs" per character making this Font a p
 
 ### Wireframes
 
-
-[Here are the wireframes for desktop, mobile and tablet for this project](assets/docs/wireframes.pdf).
+<details>
+  <summary>Here are the wireframes for desktop, mobile and tablet for this project</summary>
 
 1. As a first time user, I want to quickly get an overview of what this site is for 
 
 Mobile:
 
-![Wireframe of mobile landing page](./assets/images/mobile-main.png)
+<img style="width:400px; text-align:center" src="./assets/images/mobile-main.png" alt="Wireframe of mobile landing page">
 
-![Wireframe of mobile contact page](./assets/images/mobile-contact.png)
+! <img style="width:400px; text-align:center" src="./assets/images/mobile-contact.png " alt="Wireframe of mobile contact page">
 
 Tablet:
 
 2. As a user, I want to be able to easily navigate to different pages on the site and back again
 
-![Wireframe of tablet navbar page](./assets/images/tablet.png)
+<img style="width:400px; text-align:center" src="./assets/images/tablet.png" alt="Wireframe of tablet navbar page">
 
-![Wireframe of tablet contact page](./assets/images/tablet-contact.png)
-
+<img style="width:400px; text-align:center" src="./assets/images/tablet-contact.png" alt="Wireframe of tablet contact page">
 
 Screen:
 
-![Wireframe of full-screen landing page](./assets/images/full-screen-home.png)
+<img style="width:400px; text-align:center; border:2px solid red;" src="./assets/images/full-screen-home.png" alt="Wireframe of full-screen landing page">
 
-![Wireframe of full-screen contact page](./assets/images/full-screen-contact.png)
+<img style="width:400px; text-align:center" src="./assets/images/full-screen-contact.png" alt="Wireframe of full-screen contact page">
+
+</details>
+
 
 
 ### Features
