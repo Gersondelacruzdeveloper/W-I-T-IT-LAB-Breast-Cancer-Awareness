@@ -265,7 +265,8 @@ nav {
 img {
     max-width: 100%;
     height: auto;
-  }
+}
+
 /* -------------------------------------------------------------------- Awareness */
 
 #awareness {
@@ -276,7 +277,8 @@ img {
     align-items: center;
 }
 
-#awareness-title {
+#awareness-title,
+#resources-title {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     justify-self: center;

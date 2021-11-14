@@ -1,5 +1,7 @@
-# Bust IT: Cancer without borders
-## Team Name: Chat til late
+# Bust IT: Cancer Without Borders
+
+## Team Name: Chat 'til Late
+
 ---
 
 ![GitHub contributors](https://img.shields.io/github/contributors/vanessacleary/W-I-T-IT-LAB-Breast-Cancer-Awareness)
@@ -19,7 +21,7 @@ WHY DID WE CHOOSE THIS PROJECT
 
 Transgender people are often overlooked and under-represented as a group, especially when it comes to information and resources available relating to breast cancer.
 
-![Final project image home page](assets/docs/finalpage.png)
+![Final project image home page](assets/docs/img/finalpage.png)
 
 ## Contents
 
@@ -48,7 +50,6 @@ Transgender people are often overlooked and under-represented as a group, especi
 * [Testing](#testing)
   * [W3C Validator](#w3c-validator)
   * [Testing User Stories](#testing-user-stories)
-  * [Full Testing](#full-testing)
   * [Further Testing](#further-testing)
   * [Solved Bugs](#solved-bugs)
   * [Known Bugs](#known-bugs)
@@ -74,7 +75,7 @@ WHAT WE WANTED FROM THIS PROJECT
 
 ### User Stories
 
-- As a generic user, I want to be made aware of Breast Cancer in under-represented Genders
+* As a generic user, I want to be made aware of Breast Cancer in under-represented Genders
 
 #### Client Goals
 
@@ -100,13 +101,11 @@ WHAT WE WANTED FROM THIS PROJECT
 
 ### Color Scheme
 
-* WHAT COLORS USED AND WHY
-
-We chose to use the colours that are in the transgender flag as our site is primarily designed for the transgender community.
+* We chose to use the colours that are in the transgender flag as our site is primarily designed for the transgender community.
 
 ### Typography
 
-We have used the google fonts <a href="https://fonts.google.com/specimen/Nunito">Nunito</a> and <a href="https://fonts.google.com/specimen/Raleway">Raleway</a>. These fonts are assessible friendly.
+We have used the google fonts [Nunito](https://fonts.google.com/specimen/Nunito) and [Raleway](https://fonts.google.com/specimen/Raleway). These fonts are accessibility friendly, as the sans-serif family is easily readable to those with dyslexia.
 
 Nunito is a well balanced sans-serif typeface, meaning it does not have any extending "serif" strokes at the end of each character. This font
 brings a clean, crisp, balanced feel to the website and render with complete precision in all devices which increases legibility for users. As our
@@ -124,62 +123,52 @@ Raleway does not sport any extending "serifs" per character making this Font a p
 
 ### Wireframes
 
-<details>
-  <summary>Here are the wireframes for desktop, mobile and tablet for this project</summary>
-
-1. As a first time user, I want to quickly get an overview of what this site is for 
-
 Mobile:
 
-<img style="width:400px; text-align:center" src="./assets/images/mobile-main.png" alt="Wireframe of mobile landing page">
+[Wireframe of mobile landing page](assets/docs/mobile-main.png)
 
-! <img style="width:400px; text-align:center" src="./assets/images/mobile-contact.png " alt="Wireframe of mobile contact page">
+[Wireframe of mobile contact page](assets/docs/mobile-contact.png)
 
 Tablet:
 
-2. As a user, I want to be able to easily navigate to different pages on the site and back again
+[Wireframe of tablet navbar page](assets/docs/tablet.png)
 
-<img style="width:400px; text-align:center" src="./assets/images/tablet.png" alt="Wireframe of tablet navbar page">
+[Wireframe of tablet contact page](assets/docs/tablet-contact.png)
 
-<img style="width:400px; text-align:center" src="./assets/images/tablet-contact.png" alt="Wireframe of tablet contact page">
+Desktop:
 
-Screen:
+[Wireframe of desktop landing page](assets/docs/tablet.png)
 
-<img style="width:400px; text-align:center; border:2px solid red;" src="./assets/images/full-screen-home.png" alt="Wireframe of full-screen landing page">
-
-<img style="width:400px; text-align:center" src="./assets/images/full-screen-contact.png" alt="Wireframe of full-screen contact page">
-
-</details>
-
-
+[Wireframe of desktop contact page](assets/docs/tablet-contact.png)
 
 ### Features
-
-* WHAT FEATURES ARE ONE THE SITE, LIKE SCOREBOARD, FUNCTIONS, SCROLLING ALERT BAR, ETC.
 
 The site itself utilises a primary Single-Page-Application style build with secondary/tertiary stand-alone pages added, removing unnecessary bloat from the SPA itself. The SPA is constructed and developed on the `index.html` page, which is situated in the root directory, and encompasses the project's primary information and user group engagement sections.
 
 Within the SPA, the structure is comprised of:
+
 * Navbar to allow for easy navigation within the SPA using Smooth scrolling
-* Hero section maintaining a primary landing image & potential brand slogan
-* Awareness section which holds key informative detail for the user in bite-size fashion
-* Support section which allocates helpful topics for the user
-* Resources section.....
-* Contact section allowing the user to get in touch with brand ambassadors
+* Hero image section, maintaining a primary landing image
+* Awareness section, which holds key informative detail for the user in bite-size fashion
+* Support section, which allocates helpful topics for the user
+* Resources section, which includes links to other related sites that may be useful to a user of our site
+* Contact section, allowing the user to get in touch with brand ambassadors
 * Footer which contains social links/secondary pages such as Privacy/Accessibility statements
 
 Tertiary pages include:
-* 404 Error Page in case of incorrect/adverse navigation to pages/directories that may not exist within this project.
+
+* 404 Error page in case of incorrect/adverse navigation to pages/directories that may not exist within this project.
+* 500 Error page in case of internal server errors.
 
 #### Awareness Section
 
 The Awareness section utilises html/css/js to promote information about Breast Cancer to an under-promoted User Group, Transgender People. Information in this section was referenced from multiple sources and is cited below in the Credits of this README.
 
-HTML/CSS is used to structure the content and appropriate section layout using up-to-date methods such as Semantic use of HTML and CSS Grid. 3D Model viewers are implemented to promote the human body and in it's native primitive form. The library used to implement these 3D models is <a href="https://modelviewer.dev/">Model Viewer by Google</a>. On page load, the `model-viewer` elements load both models simultaneously to reduce render on view motion on the site, and User interaction controls are removed by default to enhance user experience and accessibility.
+HTML/CSS is used to structure the content and appropriate section layout using up-to-date methods such as Semantic use of HTML and CSS Grid. 3D Model viewers are implemented to promote the human body and in it's native primitive form. The library used to implement these 3D models is [Model Viewer by Google](https://modelviewer.dev/). On page load, the `model-viewer` elements load both models simultaneously to reduce render on view motion on the site, and User interaction controls are removed by default to enhance user experience and accessibility.
 
 Some JS is utilised to detect the current device viewport width, and if less than 992px wide, the `field-of-view` attribute value of the `model-viewer` elements is updated to reflect the smaller viewport allowing for more of the 3D models to be viewed by the user, saving on vital real estate on the device.
 
-The 3D models utilised in the `model-viewer` and situated in the assets directory in their own sub-directory called "models", were obtained from <a href="https://free3d.com/">free3d.com</a>, and heavily modified in Blender to add custom lighting styled on the Transgender Community's Flag, and to add increased sub-division modifier and shadow rendering. Links to both models in Credits section in this README.
+The 3D models utilised in the `model-viewer` and situated in the assets directory in their own sub-directory called "models", were obtained from [free3d.com](https://free3d.com/), and heavily modified in Blender to add custom lighting styled on the Transgender Community's Flag, and to add increased sub-division modifier and shadow rendering. Links to both models in Credits section in this README.
 
 #### Contact section
 
@@ -200,9 +189,11 @@ Our site has an email sign-up that the user can sign up to and receive a monthly
 ### Frameworks Libraries and Programs Used
 
 #### Model Viewer
+
 [Model Viewer](https://modelviewer.dev/) by Google, used to allow us to use a lightweight, easy to display 3D models preview in the browser. Linked to `index.html` through script link.
 
 #### Blender
+
 [Blender](https://www.blender.org/) was used to ammend and add to the 3D models obtained for use in the "Awareness" section of the site.
 
 #### Font Awesome
@@ -308,6 +299,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 
 3. JSHint
     * [JSHint](https://jshint.com/)
+    * No errors were found in any of our JavaScript files
 
 [Back to Top](#title)
 
@@ -317,19 +309,19 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 
 ##### GOAL 1
 
-* HOW THE SITE COMPLETEES EACH GOAL
+* HOW THE SITE COMPLETES EACH GOAL
 
 #### First Time Visitor Goals Testing
 
 ##### GOAL 2
 
-* HOW THE SITE COMPLETEES EACH GOAL
+* HOW THE SITE COMPLETES EACH GOAL
 
 #### Returning Visitor Goals Testing
 
 ##### GOAL 3
 
-* HOW THE SITE COMPLETEES EACH GOAL
+* HOW THE SITE COMPLETES EACH GOAL
 
 #### Frequent Visitor Goals Testing
 
@@ -338,10 +330,6 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 * HOW THE SITE COMPLETES EACH GOAL
 
 [Back to Top](#title)
-
-### Full Testing
-
-[Click here](assets/docs/testing.md) to view the full testing steps that were completed on every device and browser, and screenshots of testing.
 
 #### Desktop / Laptop
 
@@ -411,7 +399,7 @@ Friends, family members, and other developers were asked to review the site and 
 
 ### Known Bugs
 
-* ANY BUGS LEFT IN THE CODE AFTER FINAL DEPLOYMENT, FOR FIXING IN FUTURE RELEASES
+* There are no known bugs left in this project. If you find one, please contact the development team via the contact form.
 
 ### Lighthouse
 
@@ -419,11 +407,11 @@ We tested our website using DevTools Lighthouse feature, and got these results:
 
 #### Desktop Lighthouse
 
-![Lighthouse desktop first try](assets/docs/lighthouse.png)
+![Lighthouse desktop first try](assets/docs/lighthouse-desktop.png)
 
 #### Mobile Lighthouse
 
-![Lighthouse mobile first try](assets/docs/lighthousemobile.png)
+![Lighthouse mobile first try](assets/docs/lighthouse-mobile.png)
 
 #### Performance
 
@@ -451,33 +439,38 @@ We tested our website using DevTools Lighthouse feature, and got these results:
 
 * [Font Awesome](https://fontawesome.com/): Library of icons used for social media and download links.
 * [Autoprefixer CSS online](https://autoprefixer.github.io/): To aid in the CSS prefixing.
-* ANY CODE WE USED FROM OTHER PEOPLE OR SITES AND WHO IT'S FROM, INCLUDING CREDITING ANYONE WHO HELPED ME FIX BUGS
+* [W3Schools](https://www.w3schools.com/): Input area styling on the contact form.
 
 ### Content
 
-* WHO OWNS THE CONTENT OF THE SITE
-
-#### Awareness section content cited from:
-* https://breastcancernow.org/about-us/news-personal-stories/transgender-people-breast-cancer
-* https://www.breastcancer.org/research-news/feminizing-hormones-increase-risk-in-trans-women
-* https://helloclue.com/articles/cycle-a-z/what-trans-men-and-nonbinary-people-need-to-know-about-breast-cancer
-* https://www.cancer.ie/cancer-information-and-support/cancer-types/breast-cancer
+* [Breast Cancer Now](https://breastcancernow.org/about-us/news-personal-stories/transgender-people-breast-cancer)
+* [BreastCancer.org](https://www.breastcancer.org/research-news/feminizing-hormones-increase-risk-in-trans-women)
+* [Helloclue](https://helloclue.com/articles/cycle-a-z/what-trans-men-and-nonbinary-people-need-to-know-about-breast-cancer)
+* [cancer.ie](https://www.cancer.ie/cancer-information-and-support/cancer-types/breast-cancer)
 
 ### Media
 
-* WHO OWNS ANY MEDIA ON THE SITE, SUCH AS IMAGES AND VIDEOS
-
-* [footer-light.jpg](https://www.rawpixel.com/image/513903/pink-water-textured-background)
-
+* [Light-mode footer](https://www.rawpixel.com/image/513903/pink-water-textured-background)
+* [Dark-mode footer](https://www.pexels.com/photo/cloudy-sky-3941855/)
+* [Transgender ribbon used for favicon](https://www.facebook.com/transcancerzine/)
 * [Privacy Policy Template](https://www.termsfeed.com/public/uploads/2019/04/privacy-policy-template.pdf)
-
 * [3D Male Torso Model used in model-viewer element Awareness Section](https://free3d.com/3d-model/maletorso-v1--121321.html)
-
 * [3D Female Torso Model used in model-viewer element Awareness Section](https://free3d.com/3d-model/femaletorso-v2--116018.html)
+* [404 / 500 page background](https://www.pexels.com/photo/color-text-1279813/)
+* [Transgender symbol used for logo](https://www.shutterstock.com/image-vector/trans-sign-symbol-icon-sexuality-gender-1566830602)
+* [Group of women used for About us section](https://www.rawpixel.com/image/462247/free-illustration-vector-lgbtq-woman-gender)
+* [Group of people sitting on a pink world](https://www.rawpixel.com/image/46762/business-people-sitting-world-map)
 
 ### Acknowledgements
 
-* Our facilitator Dragos Scantei.
+* Our facilitator [Dragos Scantei](https://www.linkedin.com/in/dragosscantei/).
 * Our families for their endless patience while we hack away.
+* The members of team Chat 'til Late:
+  * [Abi Harrison](https://github.com/abibubble)
+  * [Anthony O'Brien](https://github.com/auxfuse)
+  * [Gerson De La Cruz](https://github.com/Gersondelacruzdeveloper)
+  * [Joan Amudu](https://github.com/Joan-Amudu)
+  * [Kera Cudmore](https://github.com/kera-cudmore)
+  * [Vanessa Cleary](https://github.com/vanessacleary)
 
 [Back to Top](#title)
