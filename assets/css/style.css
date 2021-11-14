@@ -48,10 +48,16 @@ a {
 }
 
 article > section,
+.resource-lists li,
 article .article-content {
     font-size: 1.2rem;
     line-height: 2rem;
 }
+
+.resource-lists li::marker {
+    content: url(../favicon/favicon-32x32.png);
+}
+
 
 /* -------------------------------------------------------------------- Utilities */
 
@@ -338,7 +344,13 @@ model-viewer {
 .resources-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
+
+.resources-grid h2 {
+    grid-column: 1 / -1;
+}
+
 
 /* -------------------------------------------------------------------- Contact Us Page */
 
@@ -560,6 +572,11 @@ footer {
         padding-top: 8px;
     }
 
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+
     .contact-us {
        margin: 50px;         
     } 
@@ -578,6 +595,7 @@ footer {
     /* Large devices (Desktop tablets, 992px and up) */
 @media only screen and (min-width: 992px) {
     article > section,
+    .resource-lists li,
     article .article-content {
         font-size: 1.6rem;
         line-height: 3.2rem;
@@ -630,3 +648,4 @@ footer {
         visibility: visible;
     }
 }
+
