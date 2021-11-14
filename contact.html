@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="canonical" href="#">
         <meta name="robots" content="index, follow">
-        <title>SITE TITLE</title>
+        <title>Bust IT: Cancer Without Borders</title>
         <!-- Facebook, LinkedIn, Google -->
         <meta property="og:type" content="article" />
         <meta property="og:title" content="TITLE OF YOUR POST OR PAGE" />
@@ -37,34 +37,35 @@
 
     <body>
         <!--Header section-->
-        <header id="header">
-            <div class="menu_bar" onclick="openNavBar()"><i id="bar_icon" class="fas fa-bars"></i></div>
-
+        <header>
             <div class="logo-spin">
-                <img src="assets/images/Logo-Cools.png"></img>
+                <img src="assets/images/logo-cools.png" alt="Logo icon of all genders, rotating"></img>
             </div>
+
             <div class="logo">
-                <h2>Team_Name</h2>
+                <h2>Bust IT: Cancer Without Borders</h2>
+            </div>
+
+            <div class="menu-bar tap-target" onclick="openNavBar()" role="button">
+                <span class="sr-only">Open the navigation menu</span>
+                <i class="fas fa-bars fa-2x tap-target bar-icon"></i>
             </div>
 
             <nav class="menu" id="menu">
-                <div class="menu_bar" onclick="closeNavBar()"><i class="fas fa-times"></i></div>
+                <div class="menu-bar" onclick="closeNavBar()" role="button">
+                    <i class="fas fa-times fa-2x tap-target close-icon"></i>
+                </div>
                 <ul class="overlay-content">
-                    <li><a href="#">Home</a></li>
-                    <hr>
-                    <li><a href="#">Awareness</a></li>
-                    <hr>
-                    <li><a href="#">Support</a></li>
-                    <hr>
-                    <li><a href="#">Resources</a></li>
-                    <hr>
-                    <li><a href="contact.html">Contact</a></li>
-                    <hr>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#awareness">Awareness</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <!--main section-->
 
+        <!-- Main section -->
         <main class="footer-allowance readable-width">
             <div class="page-title">
                 <h1>Contact Us</h1>
@@ -74,13 +75,13 @@
                 <form id="contact-form" action="#">
                                          
                     <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your first name.." aria-describedby="First Name">
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name">
                   
                     <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." aria-describedby="Last Name">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name">
                   
-                    <label for="country">Email </label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last email.." aria-describedby="email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address">
                   
                     <label for="subject">Subject</label>
                     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
@@ -97,7 +98,7 @@
             <a href="#">Privacy Policy</a>
             <a href="accessibility.html">Accessibility</a>
             <!-- Auto-updating copyright -->
-            <p class="copyright">Copyright &copy; Team 10 <span id="copyright"></span></p>
+            <p class="copyright">Copyright &copy; Team Chat 'til Late <span id="copyright"></span></p>
         </footer>
 
         <!-- Local scripts -->
