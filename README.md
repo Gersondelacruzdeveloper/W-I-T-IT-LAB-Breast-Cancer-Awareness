@@ -151,10 +151,6 @@ Screen:
 ![Wireframe of full-screen contact page](./assets/images/full-screen-contact.png)
 
 
-
-
-
-
 ### Features
 
 * WHAT FEATURES ARE ONE THE SITE, LIKE SCOREBOARD, FUNCTIONS, SCROLLING ALERT BAR, ETC.
