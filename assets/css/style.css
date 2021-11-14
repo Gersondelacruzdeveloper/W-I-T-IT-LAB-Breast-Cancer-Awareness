@@ -44,6 +44,11 @@ a {
     color: var(--p-color-dk);
 }
 
+section > article {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
 /* -------------------------------------------------------------------- Utilities */
 
 .readable-width {
@@ -52,7 +57,7 @@ a {
 }
 
 .section-margin {
-    margin: 1.5rem 0;
+    margin-top: 3rem;
 }
 
 .section-title {
@@ -107,6 +112,19 @@ a:focus {
     align-items: center;
 }
 
+.utils-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.utils-control-button {
+    height: 3.5rem;
+    width: 15rem;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+
 /* -------------------------------------------------------------------- Awareness */
 
 #awareness {
@@ -149,11 +167,6 @@ model-viewer {
 #male-model-viewer {
     grid-column: 1 / -1;
     grid-row: 4 / 5;
-}
-
-section > article {
-    font-size: 1.2rem;
-    line-height: 2rem;
 }
 
 /* -------------------------------------------------------------------- Contact Us Page */
@@ -416,6 +429,13 @@ footer {
     section > article {
         font-size: 1.6rem;
         line-height: 3.2rem;
+    }
+
+    .utils-buttons {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        gap: 2rem;
     }
 
     #awareness {

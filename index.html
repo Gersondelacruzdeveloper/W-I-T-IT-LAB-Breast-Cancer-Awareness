@@ -90,8 +90,10 @@
 
                 <article id="utils-controls">
                     <p>Click to enable/disable:</p>
-                    <button class="utils-control-button" id="interactive-controls">Interactive Controls</button>
-                    <button class="utils-control-button" id="auto-rotate">Model Auto-Rotation</button>
+                    <div class="utils-buttons">
+                        <button class="utils-control-button tap-target" id="interactive-controls">Interactive Controls</button>
+                        <button class="utils-control-button tap-target" id="auto-rotate">Model Auto-Rotation</button>
+                    </div>
                 </article>
             </section>
 
@@ -100,6 +102,7 @@
 
                 <model-viewer
                     id="female-model-viewer"
+                    class="tap-target"
                     auto-rotate
                     loading="eager"
                     field-of-view="30deg"
@@ -137,6 +140,7 @@
 
                 <model-viewer
                     id="male-model-viewer"
+                    class="tap-target"
                     auto-rotate
                     loading="eager"
                     field-of-view="30deg"

@@ -9,15 +9,24 @@ const modelViewer = document.querySelectorAll('model-viewer');
 
 interactiveButton.addEventListener("click", () => {
     for (let el of modelViewer) {
-        el.setAttribute('camera-controls', '');
-        el.style.pointerEvents = 'auto';
-    }
+        if (el.hasAttribute('camera-controls')) {
+            el.removeAttribute('camera-controls');
+            el.style.pointerEvents = 'none';
+        } else {
+            el.setAttribute('camera-controls', '');
+            el.style.pointerEvents = 'auto';
+        }
+    };
 });
 
 rotateButton.addEventListener("click", () => {
     for (el of modelViewer) {
-        el.removeAttribute('auto-rotate');
-    }
+        if (el.hasAttribute('auto-rotate')) {
+            el.removeAttribute('auto-rotate');
+        } else {
+            el.setAttribute('auto-rotate', '');
+        }
+    };
 });
 
 // -------------------------------------------------------------------- Awareness
