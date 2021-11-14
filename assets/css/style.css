@@ -287,6 +287,10 @@ nav {
     display: none;
 }
 
+.large-screen {
+    height: revert;
+}
+
 /* -------------------------------------------------------------------- Footer */
 
 .footer-allowance {
@@ -358,6 +362,9 @@ footer {
         color: var(--white);
         width: 48px;
         height: 48px;
+        position: absolute;
+        right: 0;
+        top: 19px;
     }
 
     /* Menu slide down from the top*/
@@ -372,6 +379,10 @@ footer {
         overflow-y: hidden;
         transition: 0.5s;
         margin: 0;
+    }
+
+    .menu ul {
+        margin-top: 40px;
     }
 
     .overlay-content {
@@ -397,6 +408,10 @@ footer {
 
     .close-icon {
         padding-top: 8px;
+    }
+
+    .navbar-toggle {
+        height: 100%;
     }
 }
 
