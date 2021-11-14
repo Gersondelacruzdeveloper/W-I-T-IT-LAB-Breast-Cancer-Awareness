@@ -47,7 +47,8 @@ a {
     color: var(--p-color-dk);
 }
 
-article > section {
+article > section,
+article .article-content {
     font-size: 1.2rem;
     line-height: 2rem;
 }
@@ -229,6 +230,42 @@ nav {
     height: revert;
 }
 
+/* -------------------------------------------------------------------- About Us */
+
+#about-us {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-us-title {
+    font-size: 2.2rem;
+    font-style: italic;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
+}
+
+#about-us-title::after {
+    display: block;
+    content: '';
+    margin: 0.5rem auto;
+    height: 2px;
+    width: 80%;
+    background-color: var(--light-pink);
+}
+
+.article-content {
+    margin: 1rem 3rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
 /* -------------------------------------------------------------------- Awareness */
 
 #awareness {
@@ -517,7 +554,8 @@ footer {
 
     /* Large devices (Desktop tablets, 992px and up) */
 @media only screen and (min-width: 992px) {
-    article > section {
+    article > section,
+    article .article-content {
         font-size: 1.6rem;
         line-height: 3.2rem;
     }
