@@ -11,14 +11,22 @@ if (innerWidth < "992") {
         el.setAttribute('field-of-view', '45deg');
     }
 };
-// -------------------------------------------------------------------- Header 
 
-function openNavBar() {
-    document.getElementById("menu").style.height = "100%";
-}
+// -------------------------------------------------------------------- Navbar 
 
-function closeNavBar() {
-    document.getElementById("menu").style.height = "0%";
+let burgerIcon = document.getElementById("nav-burger");
+let closeIcon = document.getElementById("close-icon");
+let navbar = document.getElementById("menu");
+
+burgerIcon.addEventListener("click", toggleNavbar);
+closeIcon.addEventListener("click", toggleNavbar);
+
+function toggleNavbar() {
+    if (navbar.classList.contains("navbar-toggle")) {
+        navbar.classList.remove("navbar-toggle");
+    } else {
+        navbar.classList.add("navbar-toggle");
+    }
 }
 
 // -------------------------------------------------------------------- Copyright

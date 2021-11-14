@@ -55,6 +55,14 @@ a {
     margin: 1.5rem 0;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.title {
+    margin-top: 30px;
+}
+
 /* -------------------------------------------------------------------- Hover / Focus */
 
 a:hover,
@@ -279,6 +287,10 @@ nav {
     display: none;
 }
 
+.large-screen {
+    height: revert;
+}
+
 /* -------------------------------------------------------------------- Footer */
 
 .footer-allowance {
@@ -335,6 +347,13 @@ footer {
 
 /* -------------------------------------------------------------------- Media query */
 
+@media only screen and (max-width: 476px) {
+    footer p,
+    footer a {
+        font-size: 12px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .menu-bar {
         background-color: var(--blue);
@@ -343,6 +362,9 @@ footer {
         color: var(--white);
         width: 48px;
         height: 48px;
+        position: absolute;
+        right: 0;
+        top: 19px;
     }
 
     /* Menu slide down from the top*/
@@ -357,6 +379,10 @@ footer {
         overflow-y: hidden;
         transition: 0.5s;
         margin: 0;
+    }
+
+    .menu ul {
+        margin-top: 40px;
     }
 
     .overlay-content {
@@ -382,6 +408,10 @@ footer {
 
     .close-icon {
         padding-top: 8px;
+    }
+
+    .navbar-toggle {
+        height: 100%;
     }
 }
 
