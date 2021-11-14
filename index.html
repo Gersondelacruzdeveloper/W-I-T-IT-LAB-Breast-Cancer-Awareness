@@ -66,9 +66,9 @@
                 </div>
                 <ul class="overlay-content">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#awareness">Awareness</a></li>
+                    <li><a href="#awareness-section">Awareness</a></li>
                     <li><a href="#support">Support</a></li>
-                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#resources-section">Resources</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -78,55 +78,90 @@
         <main id="home" class="footer-allowance">
             <h1 class="readable-width text-center title">Bust IT: Cancer Without Borders</h1>
 
-            <section id="awareness" class="section-margin">
-                <h2 id="awareness-title">Awareness</h2>
+            <section id="awareness-section" class="section-margin">
+                <article id="awareness" >
+                    <h2 id="awareness-title" class="section-title">Awareness</h2>
 
-                <model-viewer
-                    id="female-model-viewer"
-                    auto-rotate
-                    loading="eager"
-                    field-of-view="30deg"
-                    environment-image="assets/models/moonless_golf_2k.hdr"
-                    alt="A 3D model of a female body's torso"
-                    src="assets/models/fem-torso-transLights.glb">
-                </model-viewer>
-                
-                <article id="awareness-content-1">
-                    <p class="article-content">
-                        Breast cancer is when cells in your breast change and grow in an
-                        abnormal way, and sometimes can create tumours. In Ireland alone, roughly 3,600 women and 40 men are diagnosed with it each year. 
-                    </p>
-                    <p class="article-content">
-                        But what about Transgender people? Transgender people undergo lengthy processes to become who they want to be, and although rates of Breast cancer in Transgender people are lower than the general Cisgender population, they are still at risk.
-                    </p>
-                </article>
-                
-                <article id="awareness-content-2">
-                    <p class="article-content">
-                        Research done in the past few years has identified that Transgender
-                        people who undergo hormone treatment have an increased risk of
-                        Breast cancer.
-                    </p>
-                    <p class="article-content">
-                        These studies found that Transgender Women were around 47 times more
-                        likely to develop Breast cancer than Cisgender Men.
-                    </p>
-                    <p class="article-content">
-                        These studies also demonstrated that Transgender Men had a far
-                        reduced risk of Breast cancer than Cisgender Women, although it
-                        is still not completely understood why.
-                    </p>
-                </article>
+                    <section id="utils-content" class="section-margin">
+                        <p class="section-content">
+                            This website utilises interactive 3D models to break down the
+                            barrier of the human form and highlight the torso/breast.
+                        </p>
+                        <p class="section-content">
+                            By default, these models are non-interactive with slight
+                            rotation to support the information they pertain to.
+                            We believe in giving power to our users, so if you would
+                            like to view the 3D models in all their glory and de-mystify
+                            the human form, you can enable Interactive controls.
+                            Alternatively, if you do not like the rotation of the
+                            models, and prefer a static feel to a website, then you can
+                            also disable the rotation.
+                        </p>
+                        <p class="section-content">
+                            Keep an eye on these User Controls in the near future,
+                            more features will be added to enhance the functionality
+                            that the User has at their disposal. We want to bring
+                            light to this topic using Modern Technology and Science!
+                        </p>
+                    </section>
 
-                <model-viewer
-                    id="male-model-viewer"
-                    auto-rotate
-                    loading="eager"
-                    field-of-view="30deg"
-                    environment-image="assets/models/moonless_golf_2k.hdr"
-                    alt="A 3D model of a female body's torso"
-                    src="assets/models/male-torso-transLights.glb">
-                </model-viewer>
+                    <section id="utils-controls" class="section-margin">
+                        <p>Click to enable/disable:</p>
+                        <div class="utils-buttons">
+                            <button class="utils-control-button tap-target" id="interactive-controls">Interactive Controls</button>
+                            <button class="utils-control-button tap-target" id="auto-rotate">Model Auto-Rotation</button>
+                        </div>
+                    </section>
+                    
+                    <section id="awareness-content-1" class="section-margin">
+                        <model-viewer
+                            id="female-model-viewer"
+                            class="tap-target"
+                            auto-rotate
+                            loading="eager"
+                            field-of-view="30deg"
+                            environment-image="assets/models/moonless_golf_2k.hdr"
+                            alt="A 3D model of a female body's torso"
+                            src="assets/models/fem-torso-transLights.glb">
+                        </model-viewer>
+
+                        <p class="section-content">
+                            Breast cancer is when cells in your breast change and
+                            grow in an abnormal way, and sometimes can create tumours.
+                            In Ireland alone, roughly 3,600 women and 40 men are
+                            diagnosed with it each year. 
+                            But what about Transgender people? Transgender people
+                            undergo lengthy processes to become who they want to be,
+                            and although rates of Breast cancer in Transgender people
+                            are lower than the general Cisgender population, they
+                            are still at risk.
+                        </p>
+                    </section>
+                    
+                    <section id="awareness-content-2" class="section-margin">
+                        <p class="section-content">
+                            Research done in the past few years has identified that Transgender
+                            people who undergo hormone treatment have an increased risk of
+                            Breast cancer.
+                            These studies found that Transgender Women were around 47 times more
+                            likely to develop Breast cancer than Cisgender Men.
+                            These studies also demonstrated that Transgender Men had a far
+                            reduced risk of Breast cancer than Cisgender Women, although it
+                            is still not completely understood why.
+                        </p>
+
+                        <model-viewer
+                            id="male-model-viewer"
+                            class="tap-target"
+                            auto-rotate
+                            loading="eager"
+                            field-of-view="30deg"
+                            environment-image="assets/models/moonless_golf_2k.hdr"
+                            alt="A 3D model of a female body's torso"
+                            src="assets/models/male-torso-transLights.glb">
+                        </model-viewer>
+                    </section>
+                </article>
             </section>
 
             <section id="resources-section">

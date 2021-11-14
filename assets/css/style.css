@@ -44,6 +44,11 @@ a {
     color: var(--p-color-dk);
 }
 
+article > section {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
 /* -------------------------------------------------------------------- Utilities */
 
 .readable-width {
@@ -52,7 +57,25 @@ a {
 }
 
 .section-margin {
-    margin: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-style: italic;
+}
+
+.section-title::after {
+    display: block;
+    content: '';
+    margin: 0.5rem auto;
+    height: 2px;
+    width: 80%;
+    background-color: var(--light-pink);
+}
+
+.section-content {
+    margin: 1rem 3rem;
 }
 
 .text-center {
@@ -77,30 +100,9 @@ a:focus {
 #awareness {
     display: grid;
     grid-template-columns: 1;
-    grid-template-rows: minmax(3rem, auto) repeat(4, 1fr);
+    grid-template-rows: minmax(3rem, auto) auto auto repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-}
-
-#awareness-title {
-    font-size: 2.2rem;
-    font-style: italic;
-}
-
-#awareness-title::after {
-    display: block;
-    content: '';
-    margin: 0.5rem auto;
-    height: 2px;
-    width: 80%;
-    background-color: var(--light-pink);
-}
-
-model-viewer {
-    height: 50vh;
-    width: 100%;
-    pointer-events: none;
-    background-color: transparent;
 }
 
 #awareness-title {
@@ -110,14 +112,19 @@ model-viewer {
     align-self: center;
 }
 
-#female-model-viewer {
+#utils-content {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
 }
 
-#awareness-content-1 {
+#utils-controls {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
+}
+
+#awareness-content-1 {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
 }
 
 #awareness-content-2 {
@@ -125,18 +132,32 @@ model-viewer {
     grid-row: 5 / 6;
 }
 
-#male-model-viewer {
-    grid-column: 1 / -1;
-    grid-row: 4 / 5;
+#utils-controls {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#awareness > article {
+.utils-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.utils-control-button {
+    height: 3.5rem;
+    width: 15rem;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
     font-size: 1.2rem;
-    line-height: 2rem;
 }
 
-.article-content {
-    margin: 1rem 3rem;
+model-viewer {
+    height: 50vh;
+    width: 100%;
+    pointer-events: none;
+    background-color: transparent;
 }
 
 /* -------------------------------------------------------------------- Contact Us Page */
@@ -463,9 +484,17 @@ footer {
 
     /* Large devices (Desktop tablets, 992px and up) */
 @media only screen and (min-width: 992px) {
-    #awareness {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: minmax(3rem, auto) repeat(2, 1fr);
+
+    article > section {
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+    }
+
+    .utils-buttons {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        gap: 2rem;
     }
 
     model-viewer {
@@ -473,37 +502,28 @@ footer {
         margin: 1rem 0;
     }
 
-    #awareness-title {
-        grid-column: 1 / -1;
-        grid-row: 1 / 2;
-        align-self: center;
-        justify-self: center;
+    #awareness-content-1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
     }
 
     #female-model-viewer {
         grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
-    
-    #awareness-content-1 {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-    }
-    
-    #awareness-content-2 {
-        grid-column: 1 / 2;
-        grid-row: 3 / -1;
-    }
-    
-    #male-model-viewer {
-        grid-column: 2 / 3;
-        grid-row: 3 / -1;
     }
 
-    #awareness > article {
-        font-size: 1.6rem;
-        line-height: 3.2rem;
+    #awareness-content-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
     }
+
+    #male-model-viewer {
+        grid-column: 2 / -1;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
