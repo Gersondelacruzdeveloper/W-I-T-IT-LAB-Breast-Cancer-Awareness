@@ -44,7 +44,7 @@ a {
     color: var(--p-color-dk);
 }
 
-section > article {
+article > section {
     font-size: 1.2rem;
     line-height: 2rem;
 }
@@ -74,7 +74,7 @@ section > article {
     background-color: var(--light-pink);
 }
 
-.article-content {
+.section-content {
     margin: 1rem 3rem;
 }
 
@@ -130,14 +130,6 @@ a:focus {
 #awareness-content-2 {
     grid-column: 1 / -1;
     grid-row: 5 / 6;
-}
-
-#user-utils {
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: minmax(3rem, auto) 1fr minmax(10rem, auto);
-    justify-content: center;
-    align-items: center;
 }
 
 #utils-controls {
@@ -447,7 +439,7 @@ footer {
     /* Large devices (Desktop tablets, 992px and up) */
 @media only screen and (min-width: 992px) {
 
-    section > article {
+    article > section {
         font-size: 1.6rem;
         line-height: 3.2rem;
     }
@@ -459,42 +451,33 @@ footer {
         gap: 2rem;
     }
 
-    #awareness {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: minmax(3rem, auto) repeat(2, 1fr);
-    }
-
     model-viewer {
         height: 60vh;
         margin: 1rem 0;
     }
 
-    #awareness-title {
-        grid-column: 1 / -1;
-        grid-row: 1 / 2;
-        align-self: center;
-        justify-self: center;
+    #awareness-content-1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
     }
 
     #female-model-viewer {
         grid-column: 1 / 2;
-        grid-row: 2 / 3;
     }
-    
-    #awareness-content-1 {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-    }
-    
+
     #awareness-content-2 {
-        grid-column: 1 / 2;
-        grid-row: 3 / -1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
     }
-    
+
     #male-model-viewer {
-        grid-column: 2 / 3;
-        grid-row: 3 / -1;
+        grid-column: 2 / -1;
     }
+
 }
 
 @media only screen and (min-width: 768px) {
