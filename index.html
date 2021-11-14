@@ -33,6 +33,15 @@
         <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <!-- email JS -->
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("user_YIcIZfQpFVO1lE0J5li0u");            
+            })();
+        </script>
     </head>
 
     <body>
@@ -119,6 +128,28 @@
                     src="assets/models/male-torso-transLights.glb">
                 </model-viewer>
             </section>
+            <section id="contact" class="section-margin">
+
+                <h2 id="contact-title">Contact Us</h2>
+                              
+                <div class="container contactus">
+                    <form id="contact-form" onsubmit="return sendMail(this);">
+                                             
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Your full name.." aria-describedby="Full Name" required>
+                                            
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email.." aria-describedby="email" required>
+                      
+                        <label for="subject">Message</label>
+                        <textarea id="message" name="message" placeholder="Write something.." required></textarea>
+                      
+                        <button type="submit" value="Submit">Submit</button>
+                      
+                    </form>
+                </div>
+
+            </section>
         </main>
 
         <footer>
@@ -133,6 +164,8 @@
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
         <!-- Local scripts -->
         <script src="assets/js/script.js" async></script>
+        <!-- Email Script -->
+        <script src="assets/js/sendEmail.js"></script>
     </body>
 
 </html>
