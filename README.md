@@ -172,7 +172,11 @@ Our site has an email sign-up that the user can sign up to and receive a monthly
 
 ### Frameworks Libraries and Programs Used
 
-* <a href="https://modelviewer.dev/">Model Viewer by Google</a>
+#### Model Viewer
+[Model Viewer](https://modelviewer.dev/) by Google, used to allow us to use a lightweight, easy to display 3D models preview in the browser. Linked to `index.html` through script link.
+
+#### Blender
+[Blender](https://www.blender.org/) was used to ammend and add to the 3D models obtained for use in the "Awareness" section of the site.
 
 #### Font Awesome
 
