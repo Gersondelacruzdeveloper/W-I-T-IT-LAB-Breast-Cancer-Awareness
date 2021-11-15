@@ -130,18 +130,6 @@ button[type=submit]:focus {
     border: 0;
 }
 
-/* -------------------------------------------------------------------- Animations */
-
-@keyframes logo-spinner {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 /* -------------------------------------------------------------------- Header */
 
 header {
@@ -149,17 +137,16 @@ header {
     grid-template-areas: "logo-img project-name nav-menu";
     width: 100%;
     overflow: hidden;
-    background-color: var(--pink);
+    background-color: var(--light-pink);
     align-items: center;
     justify-items: center;
 }
 
-.logo-spin img {
+.brand img {
     grid-area: logo-img;
-    width: 70px;
+    height: 70px;
     margin: 0px;
     padding-left: 20px;
-    animation: logo-spinner infinite 20s linear;
 }
 
 .logo {
@@ -185,7 +172,7 @@ nav {
     margin-right: 20px;
 }
 
-.logo-spin {
+.brand {
     justify-self: left;
 }
 
@@ -221,10 +208,20 @@ nav {
     display: block;
 }
 
-.menu a:hover,
-.menu a:focus {
-    background-color: var(--blue);
+.menu a::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    height: 2px;
+    background-color: var(--p-color-lt);
+    transform: scaleX(0);
+    transition: transform 0.4s ease 0s;
+}
+
+.menu a:hover::after,
+.menu a:focus::after {
     cursor: pointer;
+    transform: scaleX(1);
 }
 
 .menu-bar,
@@ -272,8 +269,8 @@ nav {
 
 #about-us {
     display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
     justify-content: center;
     align-items: center;
 }
@@ -309,7 +306,7 @@ img {
 
 #awareness {
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     grid-template-rows: minmax(3rem, auto) auto auto repeat(2, 1fr);
     justify-content: center;
     align-items: center;
@@ -388,7 +385,7 @@ model-viewer {
 
 .contact {
     display: grid;
-    grid-template-columns: 1;    
+    grid-template-columns: 1fr;    
     justify-content: center;
     align-items: center;
 }
@@ -429,8 +426,10 @@ input[type=email] {
 }
 
 button[type=submit] {
-    background-color: var(--pink);
-    color: white;
+    background-color: var(--light-pink);
+    color: var(--p-color-dk);
+    display: block;
+    margin: 0 auto;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -449,7 +448,8 @@ footer {
     left: 0;
     width: 100%;
     height: 48px;
-    background: url(../images/footer-light.jpg);
+    background: no-repeat url(../images/footer-light.jpg);
+    background-size: cover;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -507,13 +507,6 @@ footer {
 
 /* -------------------------------------------------------------------- Media queries */
 
-/* Non-motion styles here */
-@media (prefers-reduced-motion) {
-    .logo-spin img {
-        animation: none;
-    }
-}
-
 /* Dark mode color styles here */
 @media (prefers-color-scheme: dark) {
     :root {
@@ -534,7 +527,8 @@ footer {
     }
 
     footer {
-        background: url(../images/footer-dark.jpg);
+        background: no-repeat url(../images/footer-dark.jpg);
+        background-size: cover;
     }
 }
 
@@ -549,10 +543,9 @@ footer {
 
 @media only screen and (max-width: 768px) {
     .menu-bar {
-        background-color: var(--blue);
         border-radius: 2px 2px 2px 2px;
         display: block;
-        color: var(--white);
+        color: var(--p-color-dk);
         width: 48px;
         height: 48px;
         position: absolute;
@@ -572,6 +565,8 @@ footer {
         overflow-y: hidden;
         transition: 0.5s;
         margin: 0;
+        display: flex;
+        align-items: center;
     }
 
     .menu ul {
@@ -613,7 +608,7 @@ footer {
     } 
 
     .navbar-toggle {
-        height: 100%;
+        height: 50%;
     }
 }
 

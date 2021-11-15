@@ -3,6 +3,7 @@
 let burgerIcon = document.getElementById("nav-burger");
 let closeIcon = document.getElementById("close-icon");
 let navbar = document.getElementById("menu");
+let navList = document.querySelectorAll('.list-item');
 
 burgerIcon.addEventListener("click", toggleNavbar);
 closeIcon.addEventListener("click", toggleNavbar);
