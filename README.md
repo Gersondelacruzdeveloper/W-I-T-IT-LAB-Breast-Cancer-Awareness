@@ -293,6 +293,10 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 
 1. W3C HTML Markup Validator
     * [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanessacleary.github.io%2FW-I-T-IT-LAB-Breast-Cancer-Awareness%2F)
+    * [privacy.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanessacleary.github.io%2FW-I-T-IT-LAB-Breast-Cancer-Awareness%2Fprivacy.html)
+    * [accessibility.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanessacleary.github.io%2FW-I-T-IT-LAB-Breast-Cancer-Awareness%2Faccessibility.html)
+    * [404.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanessacleary.github.io%2FW-I-T-IT-LAB-Breast-Cancer-Awareness%2F404.html)
+    * [500.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanessacleary.github.io%2FW-I-T-IT-LAB-Breast-Cancer-Awareness%2F500.html)
 
 2. W3C CSS Validator
     * [CSS Results](LINK)
@@ -391,8 +395,11 @@ Friends, family members, and other developers were asked to review the site and 
 
 ### Solved Bugs
 
-1. WHAT THE BUG IS
-    * WHAT STEPS WE TOOK TO FIX IT
+1. There was an overflow-x on the site that we couldn't find where it was coming from.
+    * We checked all the elements on the page for unexpected padding and margin, but found none.
+    * We checked through the code and saw that one of the CSS resets we'd used was `width: 100vw;`.
+    * We realised that this doesn't take into account the y-axis scroll bar.
+    * We changed this to `width: 100%;`, which fixed this bug.
 
 ### Known Bugs
 
