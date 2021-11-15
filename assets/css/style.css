@@ -11,6 +11,7 @@
     --p-color-lt: #d8d8d8;
     --light-blue: #5DD0FA;
     --light-pink: #F7A8B9;
+    --darker-pink: #f795aa;
 }
 
 /* -------------------------------------------------------------------- Resets */
@@ -357,6 +358,17 @@ img {
 .utils-buttons {
     display: flex;
     flex-direction: column;
+}
+
+.utils-buttons button {
+    background-color: var(--light-pink);
+    color: var(--p-color-dk);
+    border: none;
+}
+
+.utils-buttons button:hover {
+    background-color: var(--darker-pink);
+    color: var(--p-color-lt);
 }
 
 .utils-control-button {
