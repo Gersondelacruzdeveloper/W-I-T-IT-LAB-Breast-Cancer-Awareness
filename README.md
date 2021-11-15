@@ -385,6 +385,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 #### Frequent Visitor Goals Testing
 
 As a frequent user I will revisit the site as a member of the Transgender People Community to stay:
+
 ##### Informed and educated on Breast Health
 
 * All information is easily findable on the site.
