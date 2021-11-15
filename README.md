@@ -564,6 +564,7 @@ We tested our website using DevTools Lighthouse feature, and got these results:
 * [Transgender symbol used for logo](https://www.shutterstock.com/image-vector/trans-sign-symbol-icon-sexuality-gender-1566830602)
 * [Group of women used for About us section](https://www.rawpixel.com/image/462247/free-illustration-vector-lgbtq-woman-gender)
 * [Group of people sitting on a pink world](https://www.rawpixel.com/image/46762/business-people-sitting-world-map)
+* [Transgender background image in support page](https://pharmaceutical-journal.com/article/opinion/we-must-not-forget-transgender-patients-physiology-if-we-are-to-prescribe-safely)
 
 ### Acknowledgements
 
