@@ -320,7 +320,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
     * [500.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanessacleary.github.io%2FW-I-T-IT-LAB-Breast-Cancer-Awareness%2F500.html)
 
 2. W3C CSS Validator
-    * [CSS Results](LINK)
+    * [CSS Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvanessacleary.github.io%2FW-I-T-IT-LAB-Breast-Cancer-Awareness%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 3. JSHint
     * [JSHint](https://jshint.com/)
