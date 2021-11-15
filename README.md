@@ -73,19 +73,22 @@ WHAT WE WANTED FROM THIS PROJECT
 
 ### User Stories
 
-* As a generic user, I want to be made aware of Breast Cancer in under-represented Genders
-
-#### Client Goals
-
-* WHAT THE CLIENT WANTS, NOT THE USER
+* As a site owner I want to create an informative, educational and supportive Breast Cancer awareness website for the Transgender People community.
+* As a site owner I want to create a website that is dedicated to an under represented group in Breast Cancer Research.
+* As a site owner I want to create a website that links the target users to as many relevant medical, educational and supportive resource that is available.
+* As a site owner I want the site to be easy to navigate. 
 
 #### First Time Visitor Goals
 
-* WHAT A FIRST TIME VISITOR WANTS, LIKE EASY TO UNDERSTAND, EASY TO NAVIGATE
+* As a first time user I want to identify the purpose of the website. 
+* As a first time user I want to get the information I need easily. 
+* As a firt time user I want to be directed to the revelant and correct sources that I am looking for. 
+* As a first time user I want to to able to navigate the website easily.  
 
 #### Returning Visitor Goals
 
-* LIKE REPLAYABILITY, WHY THEY WANT TO RETURN TO THE SITE, EXTRA FEATURES
+* As a site owner I was returning visitors to revisit the website and get information they need at no matter what stage of their breast cancer journey they are at. 
+* As a site owner I want friends and family of Transgender People affectedby breast cancer to revisit the website and get reliable and helpful education to be supportive companions at all stages of the breast cancer journey. 
 
 #### Frequent Visitor Goals
 
@@ -123,6 +126,10 @@ Raleway does not sport any extending "serifs" per character making this Font a p
 * We used the transgender icon as our logo.
 * The images we have used are all related to breast cancer, or to the transgender community.
 * The models we used are rough designs of the male and the female torso, to help our users feel at ease about the topic.
+
+* The Transgender Breast Cancer Ribbon was added to the resources section in replace of bullet to for the following reasons: 
+    * Re-enforcing our mission and creating awareness around the flag and breast cancer ribbon. 
+    * Styling reasons, the ribbon is much more appealing than bullet points.  
 
 ### Wireframes
 
@@ -172,6 +179,18 @@ HTML/CSS is used to structure the content and appropriate section layout using u
 Some JS is utilised to detect the current device viewport width, and if less than 992px wide, the `field-of-view` attribute value of the `model-viewer` elements is updated to reflect the smaller viewport allowing for more of the 3D models to be viewed by the user, saving on vital real estate on the device.
 
 The 3D models utilised in the `model-viewer` and situated in the assets directory in their own sub-directory called "models", were obtained from [free3d.com](https://free3d.com/), and heavily modified in Blender to add custom lighting styled on the Transgender Community's Flag, and to add increased sub-division modifier and shadow rendering. Links to both models in Credits section in this README.
+
+#### Resources 
+
+The Resources section utilises html/css to promote information about Breast Cancer to an under-promoted User Group, Transgender People. Information in this section was referenced from multiple sources and is linked to offical sources and cited below in the Credits of this README.
+
+HTML/CSS is used to structure the content and appropriate section layout using up-to-date methods such as Semantic use of HTML and CSS Grid. A 3 column grid was used. 
+
+The grid was used to display 3 step journey of a Breast Cancer Diagnosis, 'Have I got Breast Cancer?', 'Diagnosed with Breast Cancer?' 'Survive and Thrive'. This was very important to display. This was designed to take the user on a journey from Breast Cancer concerns to aftercare. It also is designed so someone can get use of the website no matter what stage the find the website. 
+
+The section includes projects from fellow Code Institute Hackathonians. This is an important feature to showcase the many other fantastic resources available for anyone wanting awareness around Breast Cancer be it for Transgender people, Women or Men. It is also important to showcase the important work, research, passionate and creative work being done and focused on this important topic. 
+
+
 
 #### Contact section
 
@@ -452,6 +471,23 @@ We tested our website using DevTools Lighthouse feature, and got these results:
 * [BreastCancer.org](https://www.breastcancer.org/research-news/feminizing-hormones-increase-risk-in-trans-women)
 * [Helloclue](https://helloclue.com/articles/cycle-a-z/what-trans-men-and-nonbinary-people-need-to-know-about-breast-cancer)
 * [cancer.ie](https://www.cancer.ie/cancer-information-and-support/cancer-types/breast-cancer)
+
+### Resources 
+
+* [Transgender people & Breast cancer](https://positively-pink.herokuapp.com/home)
+* [Signs & Symptoms](https://b-care-wit.herokuapp.com/)
+* [The Breast Review](https://deannacarina.github.io/BCAwareness/index.html)
+* [B-care](https://b-care-wit.herokuapp.com/)
+* [Bosom Buddies](https://positively-pink.herokuapp.com/home)
+*  [Cancer, Grades & Sizes](https://breastcancernow.org/information-support/facing-breast-cancer/diagnosed-breast-cancer)
+* [Prognosis](https://breastcancernow.org/information-support/facing-breast-cancer/diagnosed-breast-cancer)
+* [Breast cancer, genes & family history](https://breastcancernow.org/information-support/have-i-got-breast-cancer/am-i-risk/breast-cancer-in-families)
+* [Information for you](https://breastcancernow.org/information-support/publications/download-order)
+* [Breast Cancer Club](https://breast-cancer-club.herokuapp.com/)
+* [Post Treatment](https://breastcancernow.org/information-support/facing-breast-cancer/living-beyond-breast-cancer/life-after-breast-cancer-treatment)
+* [Positive Living](https://breastcancernow.org/information-support/facing-breast-cancer/living-beyond-breast-cancer/life-after-breast-cancer-treatment)
+* [Virtual Support Hub](https://breastcancernow.org/information-support/facing-breast-cancer/living-beyond-breast-cancer/life-after-breast-cancer-treatment)
+
 
 ### Media
 
