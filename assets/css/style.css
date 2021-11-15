@@ -239,24 +239,24 @@ nav {
 /* --------------------------------------------------------------------  Hero Image */
 
 .hero-image {
-    background-image: url(/assets/images/cancer-without-borders.jpg);
+    background-image: url(../images/cancer-without-borders.jpg);
     height: 100vh;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  }
+}
   
-  .hero-image:before {
+.hero-image:before {
     content: "";
     position: absolute;
     left: 10%; right: 10%;
     top: 20%; bottom: 20%;
     background: rgba(5, 168, 233, 0.7);
-  }
+}
 
-  .hero-text {
+.hero-text {
     text-align: center;
     position: absolute;
     top: 50%;
@@ -266,7 +266,7 @@ nav {
     font-family: 'Raleway', sans-serif;
     font-size: 2rem;
     font-weight: bold;
-  }
+}
 
 /* -------------------------------------------------------------------- About Us */
 
