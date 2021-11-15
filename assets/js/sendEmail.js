@@ -24,10 +24,10 @@ document.getElementById('support-form').addEventListener('submit', function(even
 
     emailjs.sendForm(serviceID, templateID, this)
         .then(function() {
-            alert("Thnak you for signing up, You will recieve an email from us shortly");
+            alert("Thank you for signing up, you will recieve an email from us shortly");
             document.getElementById("support-form").reset();
         }, function(error) {
-            alert("Sorry, we had recieveing your email. Please try again.", error);
+            alert("Sorry, we had trouble receiving your email. Please try again.", error);
             document.getElementById("support-form").reset();
         });
 });
