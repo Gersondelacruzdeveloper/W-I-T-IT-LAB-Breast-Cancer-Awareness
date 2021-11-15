@@ -58,6 +58,36 @@ function toggleNavbar() {
     }
 }
 
+// -------------------------------------------------------------------- Support Section 
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+
+// Chat live algorithm.
+
+know = {
+    "hi": "hello, thank you for messeging, How can I help you?",
+    "hello": "hello, thank you for messeging, How can I help you?",
+    "I do not feel well": "right, can you give us more detail please",
+    "i do not feel well": "right, why do you think, you are not feeling well",
+    "i fell a lump in my chest:": " ok, what else"
+};
+
+function talk() {
+    var user = document.getElementById("userBox").value;
+    document.getElementById("userBox").value = "";
+    document.getElementById("chatLog").innerHTML += user + "<br>";
+    if (user in know) {
+        document.getElementById("chatLog").innerHTML += know[user] + "<br>";
+    } else {
+        document.getElementById("chatLog").innerHTML += "I don't understand ...<br>";
+    }
+}
+
 // -------------------------------------------------------------------- Copyright
 
 function copyrightYear() {

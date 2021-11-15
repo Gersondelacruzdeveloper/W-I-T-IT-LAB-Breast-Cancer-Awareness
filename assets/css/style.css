@@ -44,7 +44,7 @@ a {
     color: var(--p-color-dk);
 }
 
-article > section {
+article>section {
     font-size: 1.2rem;
     line-height: 2rem;
 }
@@ -163,11 +163,11 @@ model-viewer {
 /* -------------------------------------------------------------------- Contact Us Page */
 #contact {
     display: grid;
-    grid-template-columns: 1;    
+    grid-template-columns: 1;
     justify-content: center;
     align-items: center;
 }
-#contact-title {  
+#contact-title {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     justify-self: center;
@@ -188,32 +188,34 @@ model-viewer {
     background-color: var(--light-pink);
 }
 .contactus {
-    display:flex;
-	justify-content: center;    
-	margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 /* code from https://www.w3schools.com/ */
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
 }
 
 input[type=email] {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
 }
 
 button[type=submit] {
@@ -224,7 +226,6 @@ button[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
-  
 button[type=submit]:hover {
     background-color: #e6007e;
 }
@@ -273,6 +274,7 @@ header {
 }
 
 .logo-spin img {
+    position: relative;
     grid-area: logo-img;
     width: 70px;
     margin: 0px;
@@ -352,6 +354,148 @@ nav {
 
 .large-screen {
     height: revert;
+}
+
+/* -------------------------------------------------------------------- Support section */
+/* Frequently question and answers */
+.support-container h2,
+h3 {
+    text-align: center;
+    margin: 30px;
+}
+
+.frequently {
+    width: 50%;
+    margin: auto;
+}
+
+.frequently details>summary {
+    padding: 20px;
+    width: auto;
+    background-color: var(--blue);
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    cursor: pointer;
+    color: var(--white)
+}
+
+.frequently details>ul li {
+    background-color: var(--pink);
+    padding: 20px;
+    margin: 0;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    text-align: center;
+    color: var(--white);
+    text-align: justify;
+    list-style-type: circle;
+}
+
+.frequently details>p {
+    background-color: var(--pink);
+    padding: 20px;
+    margin: 0;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    text-align: center;
+    color: var(--white);
+    text-align: justify;
+    list-style-type: circle;
+}
+
+/* Live chat */
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.online-chat p {
+    text-align: center;
+}
+
+.open-button {
+    background-color: var(--blue);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 280px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+    display: none;
+    z-index: 9;
+    margin: auto;
+    ;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: var(--white);
+    margin: auto;
+}
+
+/* Full-width textarea */
+.form-container input {
+    height: 40px;
+    font-size: 16px;
+    min-width: 100%;
+    padding-left: 15px;
+    background-color: var(--white);
+    border-radius: 15px;
+    border: none;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+    background-color: var(--pink);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: var(--blue);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+.roon-chat {
+    width: auto;
+    height: 200px;
+    background-image: linear-gradient(to right, #d16ba5, #d087bc, #d0a0cf, #d2b8dc, #d9cfe5, #dbd8ee, #dde1f7, #dfeafe, #c6edff, #a3f2ff, #7cf7ff, #5ffbf1);
+    overflow: scroll;
+}
+
+#chatLog {
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #000;
+    background-color: #e6e7ec;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    margin: 15px 0;
+    direction: ltr;
+    margin: 3px;
 }
 
 /* -------------------------------------------------------------------- Footer */
@@ -474,18 +618,18 @@ footer {
     }
 
     .contactus {
-       margin: 50px;         
-    } 
+        margin: 50px;
+        }
 
     .navbar-toggle {
         height: 100%;
     }
 }
 
-    /* Large devices (Desktop tablets, 992px and up) */
+/* Large devices (Desktop tablets, 992px and up) */
 @media only screen and (min-width: 992px) {
 
-    article > section {
+    article>section {
         font-size: 1.6rem;
         line-height: 3.2rem;
     }
@@ -548,9 +692,8 @@ footer {
 
 /* -------------------------------------------------------------------- Resource styling */
 
-    .resources-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    
-     }
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
+}
