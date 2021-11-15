@@ -92,7 +92,11 @@ WHAT WE WANTED FROM THIS PROJECT
 
 #### Frequent Visitor Goals
 
-* WHY SOMEONE WOULD COME BACK REPEATEDLY, AND WHAT THEY'D WANT, LIKE EASY TO BOOK SOMETHING, OR A SCOREBOARD, ETC.
+* As a frequent user I will revisit the site as a member of the Transgender People Community to stay
+    * Informed and educated on Breast Health 
+    * To be supported on my Breast cancer journey before, during and after. 
+    * To find, stay up to date and familarise myslef with information and resource that is available for an unrepresetend group as the research in this area begins to grow. 
+
 
 [Back to Top](#bust-it-cancer-without-borders)
 
