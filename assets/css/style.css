@@ -394,6 +394,29 @@ model-viewer {
     margin-bottom: 48px;
 }
 
+.inline-form {      
+    display:flex; 
+    flex-direction: row;  
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inline-form label {
+    margin: 5px 10px 5px 0;
+  }
+  
+  .inline-form input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;  
+    padding: 10px;  
+    
+  }
+  
+ .inline-form button {
+    padding: 10px 20px;
+
+  }
+  
 /* -------------------------------------------------------------------- Resource styling */
 
 .resources-grid {
@@ -623,6 +646,16 @@ footer {
 
     .close-icon {
         padding-top: 8px;
+    }
+
+    .inline-form input {
+        margin: 10px 0;
+      }
+    
+      .inline-form {
+        flex-direction: column;
+        align-items: stretch;
+      }
     }
 
     .resources-grid {
