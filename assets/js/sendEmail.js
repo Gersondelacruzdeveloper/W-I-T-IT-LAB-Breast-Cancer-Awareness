@@ -15,3 +15,19 @@ document.getElementById('contact-form').addEventListener('submit', function(even
             document.getElementById("contact-form").reset();
         });
 });
+
+document.getElementById('support-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const serviceID = 'service_av0z1u5';
+    const templateID = 'support';
+
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(function() {
+            alert("Thnak you for signing up, You will recieve an email from us shortly");
+            document.getElementById("support-form").reset();
+        }, function(error) {
+            alert("Sorry, we had recieveing your email. Please try again.", error);
+            document.getElementById("support-form").reset();
+        });
+});
