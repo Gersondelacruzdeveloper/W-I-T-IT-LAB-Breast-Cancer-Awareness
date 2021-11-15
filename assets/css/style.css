@@ -386,6 +386,12 @@ model-viewer {
     background-color: transparent;
 }
 
+/* -------------------------------------------------------------------- Support */
+.support {
+    display: flex;
+    margin: 25px 50px;
+}
+
 /* -------------------------------------------------------------------- Resource styling */
 
 .resources-grid {
