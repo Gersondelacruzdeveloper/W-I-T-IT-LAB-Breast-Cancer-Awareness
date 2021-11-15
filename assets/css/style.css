@@ -130,18 +130,6 @@ button[type=submit]:focus {
     border: 0;
 }
 
-/* -------------------------------------------------------------------- Animations */
-
-@keyframes logo-spinner {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 /* -------------------------------------------------------------------- Header */
 
 header {
@@ -149,17 +137,16 @@ header {
     grid-template-areas: "logo-img project-name nav-menu";
     width: 100%;
     overflow: hidden;
-    background-color: var(--pink);
+    background-color: var(--light-pink);
     align-items: center;
     justify-items: center;
 }
 
-.logo-spin img {
+.brand img {
     grid-area: logo-img;
-    width: 70px;
+    height: 70px;
     margin: 0px;
     padding-left: 20px;
-    animation: logo-spinner infinite 20s linear;
 }
 
 .logo {
@@ -185,7 +172,7 @@ nav {
     margin-right: 20px;
 }
 
-.logo-spin {
+.brand {
     justify-self: left;
 }
 
@@ -221,10 +208,20 @@ nav {
     display: block;
 }
 
-.menu a:hover,
-.menu a:focus {
-    background-color: var(--blue);
+.menu a::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    height: 2px;
+    background-color: var(--p-color-lt);
+    transform: scaleX(0);
+    transition: transform 0.4s ease 0s;
+}
+
+.menu a:hover::after,
+.menu a:focus::after {
     cursor: pointer;
+    transform: scaleX(1);
 }
 
 .menu-bar,
@@ -476,13 +473,6 @@ footer {
 
 /* -------------------------------------------------------------------- Media queries */
 
-/* Non-motion styles here */
-@media (prefers-reduced-motion) {
-    .logo-spin img {
-        animation: none;
-    }
-}
-
 /* Dark mode color styles here */
 @media (prefers-color-scheme: dark) {
     :root {
@@ -518,10 +508,9 @@ footer {
 
 @media only screen and (max-width: 768px) {
     .menu-bar {
-        background-color: var(--blue);
         border-radius: 2px 2px 2px 2px;
         display: block;
-        color: var(--white);
+        color: var(--p-color-dk);
         width: 48px;
         height: 48px;
         position: absolute;
@@ -541,6 +530,8 @@ footer {
         overflow-y: hidden;
         transition: 0.5s;
         margin: 0;
+        display: flex;
+        align-items: center;
     }
 
     .menu ul {
