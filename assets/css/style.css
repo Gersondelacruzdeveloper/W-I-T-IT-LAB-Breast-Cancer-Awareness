@@ -417,7 +417,8 @@ footer {
     left: 0;
     width: 100%;
     height: 48px;
-    background: url(../images/footer-light.jpg);
+    background: no-repeat url(../images/footer-light.jpg);
+    background-size: cover;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -495,7 +496,8 @@ footer {
     }
 
     footer {
-        background: url(../images/footer-dark.jpg);
+        background: no-repeat url(../images/footer-dark.jpg);
+        background-size: cover;
     }
 }
 
