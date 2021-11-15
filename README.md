@@ -1,4 +1,4 @@
-# Bust IT: Cancer Without Borders
+# Bust IT Cancer Without Borders
 
 ## Team Name: Chat 'til Late
 
@@ -13,15 +13,11 @@
 
 [Here is a link to the final project](https://vanessacleary.github.io/W-I-T-IT-LAB-Breast-Cancer-Awareness)
 
-BASIC DESCRIPTION OF PROJECT
+This project was built for the November 2021 Hackathon with Code Institute and IT Labs. The theme was Breast Cancer Awareness, by Women in Tech. We were tasked with creating a site that utilised technology to help raise awareness about breast cancer. It is designed to be responsive on a wide range of devices, whilst also being easy to navigate through.
 
-It is designed to be responsive on a wide range of devices, whilst also being easy to navigate through.
+Transgender people are often overlooked and under-represented as a group, especially when it comes to information and resources available relating to breast cancer. We wanted to help raise awareness about a lesser-known section of breast cancer, to help those who may be affected.
 
-WHY DID WE CHOOSE THIS PROJECT
-
-Transgender people are often overlooked and under-represented as a group, especially when it comes to information and resources available relating to breast cancer.
-
-![Final project image home page](assets/docs/img/finalpage.png)
+![Final project image home page](assets/docs/finalpage.png)
 
 ## Contents
 
@@ -35,6 +31,8 @@ Transgender people are often overlooked and under-represented as a group, especi
   * [Imagery](#imagery)
   * [Wireframes](#wireframes)
   * [Features](#features)
+    * [Awareness Section](#awareness-section)
+    * [Contact Section](#contact-section)
   * [Audio](#audio)
 
 * [Technologies Used](#technologies-used)
@@ -75,25 +73,28 @@ WHAT WE WANTED FROM THIS PROJECT
 
 ### User Stories
 
-* As a generic user, I want to be made aware of Breast Cancer in under-represented Genders
-
-#### Client Goals
-
-* WHAT THE CLIENT WANTS, NOT THE USER
+* As a site owner I want to create an informative, educational and supportive Breast Cancer awareness website for the Transgender People community.
+* As a site owner I want to create a website that is dedicated to an under represented group in Breast Cancer Research.
+* As a site owner I want to create a website that links the target users to as many relevant medical, educational and supportive resource that is available.
+* As a site owner I want the site to be easy to navigate. 
 
 #### First Time Visitor Goals
 
-* WHAT A FIRST TIME VISITOR WANTS, LIKE EASY TO UNDERSTAND, EASY TO NAVIGATE
+* As a first time user I want to identify the purpose of the website. 
+* As a first time user I want to get the information I need easily. 
+* As a firt time user I want to be directed to the revelant and correct sources that I am looking for. 
+* As a first time user I want to to able to navigate the website easily.  
 
 #### Returning Visitor Goals
 
-* LIKE REPLAYABILITY, WHY THEY WANT TO RETURN TO THE SITE, EXTRA FEATURES
+* As a site owner I was returning visitors to revisit the website and get information they need at no matter what stage of their breast cancer journey they are at. 
+* As a site owner I want friends and family of Transgender People affectedby breast cancer to revisit the website and get reliable and helpful education to be supportive companions at all stages of the breast cancer journey. 
 
 #### Frequent Visitor Goals
 
 * WHY SOMEONE WOULD COME BACK REPEATEDLY, AND WHAT THEY'D WANT, LIKE EASY TO BOOK SOMETHING, OR A SCOREBOARD, ETC.
 
-[Back to Top](#title)
+[Back to Top](#bust-it-cancer-without-borders)
 
 ---
 
@@ -101,7 +102,9 @@ WHAT WE WANTED FROM THIS PROJECT
 
 ### Color Scheme
 
-* We chose to use the colours that are in the transgender flag as our site is primarily designed for the transgender community.
+* The colors are based around the pink, blue and off-white on the transgender flag (and the transgender breast cancer ribbon).
+* We chose this because our site is primarily focused on the transgender community.
+* We also implimented a basic dark mode, to be fully inclusive, using darker versions of the transgender flag colors.
 
 ### Typography
 
@@ -119,7 +122,14 @@ Raleway does not sport any extending "serifs" per character making this Font a p
 
 ### Imagery
 
-* WHAT IMAGES ARE USED AND WHY
+* We used the transgender breast cancer ribbon as our favicon, as our site is focused on raising awareness about breast cancer within the transgender community.
+* We used the transgender icon as our logo.
+* The images we have used are all related to breast cancer, or to the transgender community.
+* The models we used are rough designs of the male and the female torso, to help our users feel at ease about the topic.
+
+* The Transgender Breast Cancer Ribbon was added to the resources section in replace of bullet to for the following reasons: 
+    * Re-enforcing our mission and creating awareness around the flag and breast cancer ribbon. 
+    * Styling reasons, the ribbon is much more appealing than bullet points.  
 
 ### Wireframes
 
@@ -170,11 +180,24 @@ Some JS is utilised to detect the current device viewport width, and if less tha
 
 The 3D models utilised in the `model-viewer` and situated in the assets directory in their own sub-directory called "models", were obtained from [free3d.com](https://free3d.com/), and heavily modified in Blender to add custom lighting styled on the Transgender Community's Flag, and to add increased sub-division modifier and shadow rendering. Links to both models in Credits section in this README.
 
+#### Resources 
+
+The Resources section utilises html/css to promote information about Breast Cancer to an under-promoted User Group, Transgender People. Information in this section was referenced from multiple sources and is linked to offical sources and cited below in the Credits of this README.
+
+HTML/CSS is used to structure the content and appropriate section layout using up-to-date methods such as Semantic use of HTML and CSS Grid. A 3 column grid was used. 
+
+The grid was used to display 3 step journey of a Breast Cancer Diagnosis, 'Have I got Breast Cancer?', 'Diagnosed with Breast Cancer?' 'Survive and Thrive'. This was very important to display. This was designed to take the user on a journey from Breast Cancer concerns to aftercare. It also is designed so someone can get use of the website no matter what stage the find the website. 
+
+The section includes projects from fellow Code Institute Hackathonians. This is an important feature to showcase the many other fantastic resources available for anyone wanting awareness around Breast Cancer be it for Transgender people, Women or Men. It is also important to showcase the important work, research, passionate and creative work being done and focused on this important topic. 
+
+
+
 #### Contact section
 
-Our site has an email sign-up that the user can sign up to and receive a monthly reminder to check their breasts/chest.
+* Our site has a contact form so that users can contact us with any questions they have.
+* This form uses emailJS to send a reliable form.
 
-[Back to Top](#title)
+[Back to Top](#bust-it-cancer-without-borders)
 
 ---
 
@@ -202,15 +225,15 @@ Our site has an email sign-up that the user can sign up to and receive a monthly
 
 #### Git
 
-Git was used for version control by utilizing the Gitpod terminal to add and commit to Git and push to GitHub.
+[Git](https://git-scm.com/) was used for version control by utilizing the Gitpod terminal to add and commit to Git and push to GitHub.
 
 #### GitHub
 
-GitHub is used to store the code for this project after being pushed from Git.
+[GitHub](https://github.com/) is used to store the code for this project after being pushed from Git.
 
 #### Balsamiq
 
-Balsamiq was used to create the wireframes during the design process.
+[Balsamiq](https://balsamiq.com/) was used to create the wireframes during the design process.
 
 #### Responsinator
 
@@ -218,7 +241,7 @@ Balsamiq was used to create the wireframes during the design process.
 
 #### Google DevTools
 
-Google DevTools was used to help me find what code correlated to what feature.
+[Google DevTools](https://developer.chrome.com/docs/devtools/) was used to help us find what code correlated to what feature.
 
 #### Am I Responsive Design
 
@@ -232,7 +255,11 @@ Google DevTools was used to help me find what code correlated to what feature.
 
 [Autoprefixer CSS online](https://autoprefixer.github.io/) was used to ensure all prefixes for browsers were included correctly.
 
-[Back to Top](#title)
+#### EmailJS
+
+[EmailJS](https://www.emailjs.com/) was used to send the contact form on our site.
+
+[Back to Top](#bust-it-cancer-without-borders)
 
 ---
 
@@ -281,7 +308,7 @@ This site was deployed to GitHub Pages by following these steps:
 
 For a more detailed version of these steps, go to the [Github Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) page on this topic.
 
-[Back to Top](#title)
+[Back to Top](#bust-it-cancer-without-borders)
 
 ---
 
@@ -305,7 +332,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
     * [JSHint](https://jshint.com/)
     * No errors were found in any of our JavaScript files
 
-[Back to Top](#title)
+[Back to Top](#bust-it-cancer-without-borders)
 
 ### Testing User Stories
 
@@ -333,7 +360,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 
 * HOW THE SITE COMPLETES EACH GOAL
 
-[Back to Top](#title)
+[Back to Top](#bust-it-cancer-without-borders)
 
 #### Desktop / Laptop
 
@@ -391,7 +418,7 @@ The website was viewed on a variety of devices, including:
 A large amount of testing was done to ensure that all pages were visible or hidden correctly, all buttons worked as they should, and the site worked as it should.
 Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
 
-[Back to Top](#title)
+[Back to Top](#bust-it-cancer-without-borders)
 
 ### Solved Bugs
 
@@ -433,7 +460,7 @@ We tested our website using DevTools Lighthouse feature, and got these results:
 
 * EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
 
-[Back to Top](#title)
+[Back to Top](#bust-it-cancer-without-borders)
 
 ---
 
@@ -451,6 +478,23 @@ We tested our website using DevTools Lighthouse feature, and got these results:
 * [BreastCancer.org](https://www.breastcancer.org/research-news/feminizing-hormones-increase-risk-in-trans-women)
 * [Helloclue](https://helloclue.com/articles/cycle-a-z/what-trans-men-and-nonbinary-people-need-to-know-about-breast-cancer)
 * [cancer.ie](https://www.cancer.ie/cancer-information-and-support/cancer-types/breast-cancer)
+
+### Resources 
+
+* [Transgender people & Breast cancer](https://positively-pink.herokuapp.com/home)
+* [Signs & Symptoms](https://b-care-wit.herokuapp.com/)
+* [The Breast Review](https://deannacarina.github.io/BCAwareness/index.html)
+* [B-care](https://b-care-wit.herokuapp.com/)
+* [Bosom Buddies](https://positively-pink.herokuapp.com/home)
+*  [Cancer, Grades & Sizes](https://breastcancernow.org/information-support/facing-breast-cancer/diagnosed-breast-cancer)
+* [Prognosis](https://breastcancernow.org/information-support/facing-breast-cancer/diagnosed-breast-cancer)
+* [Breast cancer, genes & family history](https://breastcancernow.org/information-support/have-i-got-breast-cancer/am-i-risk/breast-cancer-in-families)
+* [Information for you](https://breastcancernow.org/information-support/publications/download-order)
+* [Breast Cancer Club](https://breast-cancer-club.herokuapp.com/)
+* [Post Treatment](https://breastcancernow.org/information-support/facing-breast-cancer/living-beyond-breast-cancer/life-after-breast-cancer-treatment)
+* [Positive Living](https://breastcancernow.org/information-support/facing-breast-cancer/living-beyond-breast-cancer/life-after-breast-cancer-treatment)
+* [Virtual Support Hub](https://breastcancernow.org/information-support/facing-breast-cancer/living-beyond-breast-cancer/life-after-breast-cancer-treatment)
+
 
 ### Media
 
@@ -477,4 +521,4 @@ We tested our website using DevTools Lighthouse feature, and got these results:
   * [Kera Cudmore](https://github.com/kera-cudmore)
   * [Vanessa Cleary](https://github.com/vanessacleary)
 
-[Back to Top](#title)
+[Back to Top](#bust-it-cancer-without-borders)
