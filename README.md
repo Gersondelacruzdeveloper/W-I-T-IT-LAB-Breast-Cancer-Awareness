@@ -1,4 +1,4 @@
-# Bust IT: Cancer Without Borders
+# Bust IT Cancer Without Borders
 
 ## Team Name: Chat 'til Late
 
@@ -13,15 +13,11 @@
 
 [Here is a link to the final project](https://vanessacleary.github.io/W-I-T-IT-LAB-Breast-Cancer-Awareness)
 
-BASIC DESCRIPTION OF PROJECT
+This project was built for the November 2021 Hackathon with Code Institute and IT Labs. The theme was Breast Cancer Awareness, by Women in Tech. We were tasked with creating a site that utilised technology to help raise awareness about breast cancer. It is designed to be responsive on a wide range of devices, whilst also being easy to navigate through.
 
-It is designed to be responsive on a wide range of devices, whilst also being easy to navigate through.
+Transgender people are often overlooked and under-represented as a group, especially when it comes to information and resources available relating to breast cancer. We wanted to help raise awareness about a lesser-known section of breast cancer, to help those who may be affected.
 
-WHY DID WE CHOOSE THIS PROJECT
-
-Transgender people are often overlooked and under-represented as a group, especially when it comes to information and resources available relating to breast cancer.
-
-![Final project image home page](assets/docs/img/finalpage.png)
+![Final project image home page](assets/docs/finalpage.png)
 
 ## Contents
 
@@ -35,6 +31,8 @@ Transgender people are often overlooked and under-represented as a group, especi
   * [Imagery](#imagery)
   * [Wireframes](#wireframes)
   * [Features](#features)
+    * [Awareness Section](#awareness-section)
+    * [Contact Section](#contact-section)
   * [Audio](#audio)
 
 * [Technologies Used](#technologies-used)
@@ -96,7 +94,7 @@ WHAT WE WANTED FROM THIS PROJECT
 
 * WHY SOMEONE WOULD COME BACK REPEATEDLY, AND WHAT THEY'D WANT, LIKE EASY TO BOOK SOMETHING, OR A SCOREBOARD, ETC.
 
-[Back to Top](#title)
+[Back to Top](#bust-it-cancer-without-borders)
 
 ---
 
@@ -104,7 +102,9 @@ WHAT WE WANTED FROM THIS PROJECT
 
 ### Color Scheme
 
-* We chose to use the colours that are in the transgender flag as our site is primarily designed for the transgender community.
+* The colors are based around the pink, blue and off-white on the transgender flag (and the transgender breast cancer ribbon).
+* We chose this because our site is primarily focused on the transgender community.
+* We also implimented a basic dark mode, to be fully inclusive, using darker versions of the transgender flag colors.
 
 ### Typography
 
@@ -122,7 +122,10 @@ Raleway does not sport any extending "serifs" per character making this Font a p
 
 ### Imagery
 
-* WHAT IMAGES ARE USED AND WHY
+* We used the transgender breast cancer ribbon as our favicon, as our site is focused on raising awareness about breast cancer within the transgender community.
+* We used the transgender icon as our logo.
+* The images we have used are all related to breast cancer, or to the transgender community.
+* The models we used are rough designs of the male and the female torso, to help our users feel at ease about the topic.
 
 * The Transgender Breast Cancer Ribbon was added to the resources section in replace of bullet to for the following reasons: 
     * Re-enforcing our mission and creating awareness around the flag and breast cancer ribbon. 
@@ -191,9 +194,10 @@ The section includes projects from fellow Code Institute Hackathonians. This is 
 
 #### Contact section
 
-Our site has an email sign-up that the user can sign up to and receive a monthly reminder to check their breasts/chest.
+* Our site has a contact form so that users can contact us with any questions they have.
+* This form uses emailJS to send a reliable form.
 
-[Back to Top](#title)
+[Back to Top](#bust-it-cancer-without-borders)
 
 ---
 
@@ -221,15 +225,15 @@ Our site has an email sign-up that the user can sign up to and receive a monthly
 
 #### Git
 
-Git was used for version control by utilizing the Gitpod terminal to add and commit to Git and push to GitHub.
+[Git](https://git-scm.com/) was used for version control by utilizing the Gitpod terminal to add and commit to Git and push to GitHub.
 
 #### GitHub
 
-GitHub is used to store the code for this project after being pushed from Git.
+[GitHub](https://github.com/) is used to store the code for this project after being pushed from Git.
 
 #### Balsamiq
 
-Balsamiq was used to create the wireframes during the design process.
+[Balsamiq](https://balsamiq.com/) was used to create the wireframes during the design process.
 
 #### Responsinator
 
@@ -237,7 +241,7 @@ Balsamiq was used to create the wireframes during the design process.
 
 #### Google DevTools
 
-Google DevTools was used to help me find what code correlated to what feature.
+[Google DevTools](https://developer.chrome.com/docs/devtools/) was used to help us find what code correlated to what feature.
 
 #### Am I Responsive Design
 
@@ -251,7 +255,11 @@ Google DevTools was used to help me find what code correlated to what feature.
 
 [Autoprefixer CSS online](https://autoprefixer.github.io/) was used to ensure all prefixes for browsers were included correctly.
 
-[Back to Top](#title)
+#### EmailJS
+
+[EmailJS](https://www.emailjs.com/) was used to send the contact form on our site.
+
+[Back to Top](#bust-it-cancer-without-borders)
 
 ---
 
@@ -300,7 +308,7 @@ This site was deployed to GitHub Pages by following these steps:
 
 For a more detailed version of these steps, go to the [Github Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) page on this topic.
 
-[Back to Top](#title)
+[Back to Top](#bust-it-cancer-without-borders)
 
 ---
 
@@ -311,7 +319,7 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the project to ensure there were no syntax errors within the site.
 
 1. W3C Markup Validator
-    * [HTML Results](LINK) 
+    * [HTML Results](LINK)
 
 2. W3C CSS Validator
     * [CSS Results](LINK)
@@ -320,7 +328,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
     * [JSHint](https://jshint.com/)
     * No errors were found in any of our JavaScript files
 
-[Back to Top](#title)
+[Back to Top](#bust-it-cancer-without-borders)
 
 ### Testing User Stories
 
@@ -348,7 +356,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 
 * HOW THE SITE COMPLETES EACH GOAL
 
-[Back to Top](#title)
+[Back to Top](#bust-it-cancer-without-borders)
 
 #### Desktop / Laptop
 
@@ -361,10 +369,7 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 3. Mozilla Firefox
     * All tested and working correctly.
 
-4. Internet Explorer
-    * All tested and working correctly.
-
-5. Safari
+4. Safari
     * All tested and working correctly.
 
 #### Tablet
@@ -409,7 +414,7 @@ The website was viewed on a variety of devices, including:
 A large amount of testing was done to ensure that all pages were visible or hidden correctly, all buttons worked as they should, and the site worked as it should.
 Friends, family members, and other developers were asked to review the site and documentation to point out any bugs and/or user experience issues that they came across.
 
-[Back to Top](#title)
+[Back to Top](#bust-it-cancer-without-borders)
 
 ### Solved Bugs
 
@@ -448,7 +453,7 @@ We tested our website using DevTools Lighthouse feature, and got these results:
 
 * EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
 
-[Back to Top](#title)
+[Back to Top](#bust-it-cancer-without-borders)
 
 ---
 
@@ -509,4 +514,4 @@ We tested our website using DevTools Lighthouse feature, and got these results:
   * [Kera Cudmore](https://github.com/kera-cudmore)
   * [Vanessa Cleary](https://github.com/vanessacleary)
 
-[Back to Top](#title)
+[Back to Top](#bust-it-cancer-without-borders)
