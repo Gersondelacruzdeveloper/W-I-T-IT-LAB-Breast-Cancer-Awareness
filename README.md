@@ -97,7 +97,6 @@ WHAT WE WANTED FROM THIS PROJECT
     * To be supported on my Breast cancer journey before, during and after. 
     * To find, stay up to date and familarise myslef with information and resource that is available for an unrepresetend group as the research in this area begins to grow. 
 
-
 [Back to Top](#bust-it-cancer-without-borders)
 
 ---
