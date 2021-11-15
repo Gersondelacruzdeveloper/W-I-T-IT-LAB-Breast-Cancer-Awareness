@@ -85,6 +85,13 @@ Transgender people are often overlooked and under-represented as a group, especi
 * As a site owner I was returning visitors to revisit the website and get information they need at no matter what stage of their breast cancer journey they are at.
 * As a site owner I want friends and family of Transgender People affectedby breast cancer to revisit the website and get reliable and helpful education to be supportive companions at all stages of the breast cancer journey.
 
+#### Frequent Visitor Goals
+
+* As a frequent user I will revisit the site as a member of the Transgender People Community to stay:
+  * Informed and educated on Breast Health.
+  * To be supported on my Breast cancer journey before, during and after.
+  * To find, stay up to date and familarise myslef with information and resource that is available for an unrepresetend group as the research in this area begins to grow.
+
 [Back to Top](#bust-it-cancer-without-borders)
 
 ---
@@ -370,7 +377,25 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 * All information is easily findable on the site.
 * Links are available to sites that are related, to provide more information for users.
 
-* ##### As a site owner I want friends and family of Transgender People affectedby breast cancer to revisit the website and get reliable and helpful education to be  supportive companions at all stages of the breast cancer journey
+##### As a site owner I want friends and family of Transgender People affectedby breast cancer to revisit the website and get reliable and helpful education to be  supportive companions at all stages of the breast cancer journey
+
+* All information is easily findable on the site.
+* Links are available to sites that are related, to provide more information for users.
+
+#### Frequent Visitor Goals Testing
+
+As a frequent user I will revisit the site as a member of the Transgender People Community to stay:
+##### Informed and educated on Breast Health
+
+* All information is easily findable on the site.
+* Links are available to sites that are related, to provide more information for users.
+
+##### To be supported on my Breast cancer journey before, during and after
+
+* All information is easily findable on the site.
+* Links are available to sites that are related, to provide more information for users.
+
+##### To find, stay up to date and familarise myslef with information and resource that is available for an unrepresetend group as the research in this area begins to grow
 
 * All information is easily findable on the site.
 * Links are available to sites that are related, to provide more information for users.
