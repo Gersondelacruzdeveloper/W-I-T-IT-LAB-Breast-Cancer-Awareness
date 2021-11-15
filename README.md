@@ -22,7 +22,6 @@ Transgender people are often overlooked and under-represented as a group, especi
 ## Contents
 
 * [User Experience (UX)](#user-experience-(ux))
-  * [Initial Discussion](#initial-discussion)
   * [User Stories](#user-stories)
 
 * [Design](#design)
@@ -32,6 +31,7 @@ Transgender people are often overlooked and under-represented as a group, especi
   * [Wireframes](#wireframes)
   * [Features](#features)
     * [Awareness Section](#awareness-section)
+    * [Resources Section](#resources-section)
     * [Contact Section](#contact-section)
   * [Audio](#audio)
 
@@ -48,7 +48,6 @@ Transgender people are often overlooked and under-represented as a group, especi
 * [Testing](#testing)
   * [W3C Validator](#w3c-validator)
   * [Testing User Stories](#testing-user-stories)
-  * [Further Testing](#further-testing)
   * [Solved Bugs](#solved-bugs)
   * [Known Bugs](#known-bugs)
   * [Lighthouse](#lighthouse)
@@ -66,10 +65,6 @@ Transgender people are often overlooked and under-represented as a group, especi
 ---
 
 ## User Experience (UX)
-
-### Initial Discussion
-
-WHAT WE WANTED FROM THIS PROJECT
 
 ### User Stories
 
@@ -92,10 +87,10 @@ WHAT WE WANTED FROM THIS PROJECT
 
 #### Frequent Visitor Goals
 
-* As a frequent user I will revisit the site as a member of the Transgender People Community to stay
-    * Informed and educated on Breast Health 
-    * To be supported on my Breast cancer journey before, during and after. 
-    * To find, stay up to date and familarise myslef with information and resource that is available for an unrepresetend group as the research in this area begins to grow. 
+* As a frequent user I will revisit the site as a member of the Transgender People Community to stay:
+  * Informed and educated on Breast Health.
+  * To be supported on my Breast cancer journey before, during and after.
+  * To find, stay up to date and familarise myslef with information and resource that is available for an unrepresetend group as the research in this area begins to grow.
 
 [Back to Top](#bust-it-cancer-without-borders)
 
@@ -111,15 +106,14 @@ WHAT WE WANTED FROM THIS PROJECT
 
 ### Typography
 
-We have used the google fonts [Nunito](https://fonts.google.com/specimen/Nunito) and [Raleway](https://fonts.google.com/specimen/Raleway). These fonts are accessibility friendly, as the sans-serif family is easily readable to those with dyslexia.
+We have used the [Google Fonts](https://fonts.google.com/) [Nunito](https://fonts.google.com/specimen/Nunito) and [Raleway](https://fonts.google.com/specimen/Raleway). These fonts are accessibility friendly, as the sans-serif family is easily readable to those with dyslexia.
 
 Nunito is a well balanced sans-serif typeface, meaning it does not have any extending "serif" strokes at the end of each character. This font
-brings a clean, crisp, balanced feel to the website and render with complete precision in all devices which increases legibility for users. As our
-brand is to enhance awareness and increase the reach of the information, this font denotes a calm, relaxed, informal, and approachable set of feelings.
+brings a clean, crisp, balanced feel to the website. It renders with complete precision in all devices which increases legibility for users. As our
+brand is aiming to enhance awareness and increase the reach of the information, this font denotes a calm, relaxed, informal, and approachable set of feelings.
 Nunito in our project is used as our content font and is utilised on large contextual reading pieces throughout the project.
 
-Raleway an elegant sans-serif typeface, and sports a display face natural property. A display face font is used for headings/titles/slogans etc and being more eccentric than a restrained sans-serif typeface means it is a perfect font for our headings/titles throughout our project. Like Nunito, and as a sans-serif typeface
-Raleway does not sport any extending "serifs" per character making this Font a perfect companion to Nunito and to our users reading/viewing our website on all devices.
+Raleway is an elegant sans-serif typeface, and sports a display face natural property. A display face font is used for headings/titles/slogans etc and being a more eccentric sans-serif typeface, rather than a restrained sans-serif typeface means it is a perfect font for our headings/titles throughout our project. Like Nunito, and as a sans-serif typeface, Raleway does not sport any extending "serifs" per character making this font a perfect companion to Nunito and to our users reading/viewing our website on all devices.
 
 “Sans-Serif” is used as the default backup font in cases where these fonts have difficulty loading.
 
@@ -338,27 +332,74 @@ The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the
 
 #### Client Goals Testing
 
-##### GOAL 1
+##### As a site owner I want to create an informative, educational and supportive Breast Cancer awareness website for the Transgender People community
 
-* HOW THE SITE COMPLETES EACH GOAL
+* The site has a wide range of information, aimed at the transgender community.
+* Links are also available to sites that are related, to provide more information for users.
+
+##### As a site owner I want to create a website that is dedicated to an under represented group in Breast Cancer Research
+
+* This site focuses on the transgender community.
+* A lot of breast cancer awareness is aimed at women, so we targeted an under-represented group.
+
+##### As a site owner I want to create a website that links the target users to as many relevant medical, educational and supportive resource that is available
+
+* Links are available to sites that are related, to provide more information for users.
+
+##### As a site owner I want the site to be easy to navigate
+
+* The navigation bar is available at any point on the page, for ease of navigation.
 
 #### First Time Visitor Goals Testing
 
-##### GOAL 2
+##### As a first time user I want to identify the purpose of the website
 
-* HOW THE SITE COMPLETES EACH GOAL
+* The site is very clear in its purpose.
+* The first paragraph on the page details that we are bringing awareness about breast cancer within the transgender community.
+
+##### As a first time user I want to get the information I need easily
+
+* All information is easily findable on the site.
+* The navigation bar is available at all times, allowing the user to navigate to the information they need.
+
+##### As a firt time user I want to be directed to the revelant and correct sources that I am looking for
+
+* Links are available to sites that are related, to provide more information for users.
+
+##### As a first time user I want to to able to navigate the website easily
+
+* The navigation bar is available at all times, allowing the user to navigate to the information they need.
 
 #### Returning Visitor Goals Testing
 
-##### GOAL 3
+##### As a site owner I was returning visitors to revisit the website and get information they need at no matter what stage of their breast cancer journey they are at
 
-* HOW THE SITE COMPLETES EACH GOAL
+* All information is easily findable on the site.
+* Links are available to sites that are related, to provide more information for users.
+
+##### As a site owner I want friends and family of Transgender People affectedby breast cancer to revisit the website and get reliable and helpful education to be  supportive companions at all stages of the breast cancer journey
+
+* All information is easily findable on the site.
+* Links are available to sites that are related, to provide more information for users.
 
 #### Frequent Visitor Goals Testing
 
-##### GOAL 4
+As a frequent user I will revisit the site as a member of the Transgender People Community to stay:
 
-* HOW THE SITE COMPLETES EACH GOAL
+##### Informed and educated on Breast Health
+
+* All information is easily findable on the site.
+* Links are available to sites that are related, to provide more information for users.
+
+##### To be supported on my Breast cancer journey before, during and after
+
+* All information is easily findable on the site.
+* Links are available to sites that are related, to provide more information for users.
+
+##### To find, stay up to date and familarise myslef with information and resource that is available for an unrepresetend group as the research in this area begins to grow
+
+* All information is easily findable on the site.
+* Links are available to sites that are related, to provide more information for users.
 
 [Back to Top](#bust-it-cancer-without-borders)
 
@@ -446,19 +487,26 @@ We tested our website using DevTools Lighthouse feature, and got these results:
 
 #### Performance
 
-* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+* We weren't happy with this score.
+* Unfortunately, this was brought down considerably by the 3D models we have included.
+* We decided to keep these in, as it forms a core part of the site.
+* In the future, we intend to work to make these as performant as possible.
 
 #### Accessibility
 
-* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+* We were happy with this score.
+* We took steps throughout the development process to ensure that this site would be accessible to everyone.
 
 #### Best Practices
 
-* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+* We were happy with this score.
+* We ensured to adhere to best practices throughout the site.
 
 #### SEO
 
-* EXPLAIN SCORE AND HOW WE IMPROVED IT IF NECESSARY
+* We were happy with this score.
+* The only thing we lost points on was that the links aren't crawlable.
+* This is because we've used sections within our HTML to link to, rather than other HTML pages.
 
 [Back to Top](#bust-it-cancer-without-borders)
 
