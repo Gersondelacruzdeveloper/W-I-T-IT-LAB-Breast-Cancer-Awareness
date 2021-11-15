@@ -17,7 +17,7 @@ This project was built for the November 2021 Hackathon with Code Institute and I
 
 Transgender people are often overlooked and under-represented as a group, especially when it comes to information and resources available relating to breast cancer. We wanted to help raise awareness about a lesser-known section of breast cancer, to help those who may be affected.
 
-![Final project image home page](assets/docs/finalpage.png)
+![Final project image home page](assets/docs/finalsite.png)
 
 ## Contents
 
