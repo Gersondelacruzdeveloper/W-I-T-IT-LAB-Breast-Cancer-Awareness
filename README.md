@@ -33,7 +33,6 @@ Transgender people are often overlooked and under-represented as a group, especi
     * [Awareness Section](#awareness-section)
     * [Resources Section](#resources-section)
     * [Contact Section](#contact-section)
-  * [Audio](#audio)
 
 * [Technologies Used](#technologies-used)
   * [Languages Used](#languages-used)
@@ -127,6 +126,8 @@ Raleway is an elegant sans-serif typeface, and sports a display face natural pro
   * Re-enforcing our mission and creating awareness around the flag and breast cancer ribbon.
   * Styling reasons, the ribbon is much more appealing than bullet points.
 
+[Back to Top](#bust-it-cancer-without-borders)
+
 ### Wireframes
 
 Mobile:
@@ -147,6 +148,8 @@ Desktop:
 
 [Wireframe of desktop contact page](assets/docs/tablet-contact.png)
 
+[Back to Top](#bust-it-cancer-without-borders)
+
 ### Features
 
 The site itself utilises a primary Single-Page-Application style build with secondary/tertiary stand-alone pages added, removing unnecessary bloat from the SPA itself. The SPA is constructed and developed on the `index.html` page, which is situated in the root directory, and encompasses the project's primary information and user group engagement sections.
@@ -166,6 +169,8 @@ Tertiary pages include:
 * 404 Error page in case of incorrect/adverse navigation to pages/directories that may not exist within this project.
 * 500 Error page in case of internal server errors.
 
+[Back to Top](#bust-it-cancer-without-borders)
+
 #### Awareness Section
 
 The Awareness section utilises html/css/js to promote information about Breast Cancer to an under-promoted User Group, Transgender People. Information in this section was referenced from multiple sources and is cited below in the Credits of this README.
@@ -176,6 +181,8 @@ Some JS is utilised to detect the current device viewport width, and if less tha
 
 The 3D models utilised in the `model-viewer` and situated in the assets directory in their own sub-directory called "models", were obtained from [free3d.com](https://free3d.com/), and heavily modified in Blender to add custom lighting styled on the Transgender Community's Flag, and to add increased sub-division modifier and shadow rendering. Links to both models in Credits section in this README.
 
+[Back to Top](#bust-it-cancer-without-borders)
+
 #### Resources section
 
 The Resources section utilises html/css to promote information about Breast Cancer to an under-promoted User Group, Transgender People. Information in this section was referenced from multiple sources and is linked to offical sources and cited below in the Credits of this README.
@@ -185,6 +192,8 @@ HTML/CSS is used to structure the content and appropriate section layout using u
 The grid was used to display 3 step journey of a Breast Cancer Diagnosis, 'Have I got Breast Cancer?', 'Diagnosed with Breast Cancer?' 'Survive and Thrive'. This was very important to display. This was designed to take the user on a journey from Breast Cancer concerns to aftercare. It also is designed so someone can get use of the website no matter what stage the find the website.
 
 The section includes projects from fellow Code Institute Hackathonians. This is an important feature to showcase the many other fantastic resources available for anyone wanting awareness around Breast Cancer be it for Transgender people, Women or Men. It is also important to showcase the important work, research, passionate and creative work being done and focused on this important topic.
+
+[Back to Top](#bust-it-cancer-without-borders)
 
 #### Contact section
 
