@@ -385,12 +385,12 @@ model-viewer {
 
 .contact {
     display: grid;
-    grid-template-columns: 1fr;    
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
 }
 
-.contact-title {  
+.contact-title {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     justify-self: center;
@@ -398,7 +398,7 @@ model-viewer {
 }
 
 .contact-us {
-	justify-content: center;    
+	justify-content: center;
 	margin: 0 auto;
 }
 
@@ -406,22 +406,22 @@ model-viewer {
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
 input[type=email] {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
     resize: vertical;
 }
 
@@ -602,9 +602,8 @@ footer {
         grid-template-columns: 1fr;
     }
 
-
     .contact-us {
-       margin: 50px;         
+       margin: 50px;
     } 
 
     .navbar-toggle {
