@@ -386,12 +386,31 @@ model-viewer {
     background-color: transparent;
 }
 
-/* -------------------------------------------------------------------- Support */
+/* -------------------------------------------------------------------- Support section */
+#support-section {
+    background-image: url('https://pharmaceutical-journal.com/wp-content/uploads/2021/01/Transgender-Pharm-1456x967.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    margin: 10% 0;
+
+}
+
+#support-section>h3 {
+    text-align: center;
+    color: var(--black);
+    font-size:
+}
 .support {
     display: flex;
     margin: 25px 50px;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
 }
-
+#support-form label {
+    color: var(--black);
+}
 /* -------------------------------------------------------------------- Resource styling */
 
 .resources-grid {
