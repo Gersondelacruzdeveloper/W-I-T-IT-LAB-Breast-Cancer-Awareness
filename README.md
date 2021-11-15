@@ -291,8 +291,8 @@ For a more detailed version of these steps, go to the [Github Docs](https://docs
 
 The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate the project to ensure there were no syntax errors within the site.
 
-1. W3C Markup Validator
-    * [HTML Results](LINK)
+1. W3C HTML Markup Validator
+    * [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanessacleary.github.io%2FW-I-T-IT-LAB-Breast-Cancer-Awareness%2F)
 
 2. W3C CSS Validator
     * [CSS Results](LINK)
